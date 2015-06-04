@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Vérifie la validité des marque-pages">
+<!ENTITY options "Options de vérification">
+<!ENTITY include_folders "Choisir les dossiers à inclure">
+<!ENTITY selection_default "Par défaut, tout sera inclu">
+<!ENTITY select_folders "Choisir les dossiers">
+<!ENTITY includefolders_tooltip "Choisir les dossiers à vérifier">
+<!ENTITY exclude_folders "Choisir les dossiers à exclure">
+<!ENTITY excludefolders_tooltip "Choisir les dossiers à ne pas vérifier">
+<!ENTITY show_excludes "Afficher les éléments exclus">
+<!ENTITY display "Options d'affichage">
+<!ENTITY show_bm "Menu des marque-pages">
+<!ENTITY showbm_tooltip "Afficher dans le menu des marque-pages">
+<!ENTITY show_tools "Menu des outils">
+<!ENTITY showtools_tooltip "Afficher dans le menu des outils">
+<!ENTITY show_org "Bibliothèque des marque-pages">
+<!ENTITY showorg_tooltip "Afficher dans la bibliothèque des marque-pages">
+<!ENTITY show_manage "Gérer les marque-pages">
+<!ENTITY showmanage_tooltip "Afficher dans le gestionnaire de marque-pages">
+<!ENTITY check_button "Vérifier les marque-pages">
+<!ENTITY check_links "Vérifier l'existence des pages">
+<!ENTITY checklinks_tooltip "Vérifier que chaque page marquée existe encore. REMARQUE : prend probablement un peu de temps…">
+<!ENTITY find_icons "Charger les favicônes">
+<!ENTITY findicons_tooltip "Rechercher et charger les favicônes qui manquent">
+<!ENTITY reload_icons "Recharger les favicônes">
+<!ENTITY reloadicons_tooltip "Remplacer toutes les favicônes existantes">
+<!ENTITY use_get "Vérifier en utilisant GET">
+<!ENTITY useget_tooltip "Utiliser GET au lieu de HEAD pour la vérification des liens">
+<!ENTITY use_timeout "Délai d'expiration">
+<!ENTITY usetimeout_tooltip "Annuler une vérification après un certain laps de temps">
+<!ENTITY timeout_tooltip "Délai en secondes avant annulation de la vérification">
+<!ENTITY use_concurrency "Concomitance">
+<!ENTITY useconcurrency_tooltip "Limite du nombre de marque-pages vérifiés simultanément">
+<!ENTITY concurrency_tooltip "Nombre de marque-pages vérifiés simultanément">
+<!ENTITY check_duplicates "Vérifier la présence de doublons">
+<!ENTITY checkduplicates_tooltip "Vérifier la présence de marque-pages en double">
+<!ENTITY delete_dup_dates "Supprimer les dates en doublon">
+<!ENTITY dupdates_tooltip "Voir la documentation pour plus d'informations">
+<!ENTITY check_empty "Vérifier la présence de dossiers vides">
+<!ENTITY checkempty_tooltip "Vérifier la présence de dossiers complètement vides">
+<!ENTITY what_to_check "Que vérifier ?">
+<!ENTITY folder_title "Choisir des dossiers">
+<!ENTITY progress_title "Vérification des pages">
+<!ENTITY results_title "Résultats de CheckPlaces">
+<!ENTITY checked "Vérifiés">
+<!ENTITY elapsed "Temps écoulé :">
+<!ENTITY mins "minute(s)">
+<!ENTITY bookmarks "Marque-pages :">
+<!ENTITY livemarks "Marque-pages dynamiques :">
+<!ENTITY pages "Pages :">
+<!ENTITY folders "Dossiers :">
+<!ENTITY excludedCount "Exclus :">
+<!ENTITY found "Trouvés">
+<!ENTITY bad "Mauvaises URL">
+<!ENTITY failed_label "Échoués">
+<!ENTITY failed "Pages introuvables">
+<!ENTITY inDoubt "Pages douteuses">
+<!ENTITY duplicates "Doublons">
+<!ENTITY empty "Dossiers vides">
+<!ENTITY cancelled "Pages annulées">
+<!ENTITY excluded "Éléments exclus">
+<!ENTITY deleted "Supprimé">
+<!ENTITY open "Ouvrir">
+<!ENTITY open_tooltip "Ouvrir les marque-pages sélectionnés dans des onglets">
+<!ENTITY delete "Supprimer">
+<!ENTITY delete_tooltip "Supprimer les marque-pages sélectionnés">
+<!ENTITY deletefolders_tooltip "Supprimer les marque-pages sélectionnés">
+<!ENTITY deleteall "Tout supprimer">
+<!ENTITY deleteall_tooltip "Supprimer tous les marque-pages dans la liste">
+<!ENTITY deleteallfolders_tooltip "Supprimer tous les marque-pages dans la liste">
+<!ENTITY delete_dups "Supprimer tous les doublons">
+<!ENTITY deletedups_tooltip "Supprimer tous les doublons en ne conservant qu'un marque-page">
+<!ENTITY keepfirst "Tout supprimer sauf le premier">
+<!ENTITY keepfirst_tooltip "Supprimer tous les doublons sauf l'original">
+<!ENTITY keeplast "Tout supprimer sauf le dernier">
+<!ENTITY keeplast_tooltip "Supprimer tous les doublons sauf le dernier ajouté">
+<!ENTITY exclude "Exclure">
+<!ENTITY exclude_tooltip "Ne plus vérifier les maque-pages sélectionnés la prochaine fois">
+<!ENTITY excludeall "Tout exclure">
+<!ENTITY excludeall_tooltip "Ne plus vérifier tous les maque-pages dans la liste la prochaine fois">
+<!ENTITY include "Inclure">
+<!ENTITY include_tooltip "Inclure à nouveau les marque-pages sélectionnés">
+<!ENTITY includeall "Tout inclure">
+<!ENTITY includeall_tooltip "Inclure à nouveau tous les marque-pages dans la liste">
+<!ENTITY restore "Rétablir">
+<!ENTITY restore_tooltip "A nouveau rétablir les marques sélectionnés">
+<!ENTITY restoreall "Tout rétablir">
+<!ENTITY restoreall_tooltip "A nouveau rétablir tous les marques-pages dans la liste">
+<!ENTITY fix "Réparer l'erreur 301">
+<!ENTITY fix_tooltip "Mettre à jour le marque-page avec l'URL de redirection">
+<!ENTITY fixall "Réparer toutes les erreurs 301">
+<!ENTITY fixall_tooltip "Utiliser l'URL de redirection pour toutes les erreurs 301">
+<!ENTITY dns "Erreurs DNS">
+<!ENTITY s400 "Erreurs de page">
+<!ENTITY s500 "Erreurs de serveur">
+<!ENTITY noFile "Fichiers manquant">
+<!ENTITY others "Autres erreurs">
+<!ENTITY details "Informations">
+<!ENTITY status "État / nombre">
+<!ENTITY path "Chemin">
+<!ENTITY name "Nom">
+<!ENTITY location "Emplacement">
+<!ENTITY no_problems "Aucun problème détecté">
+<!ENTITY dialog_title "Avertissement">
+<!ENTITY report_error "Problème signalé">
+<!ENTITY save "Enregistrer">
+<!ENTITY check "Vérifier">
+<!ENTITY check_db "Base de données Check Places">
+<!ENTITY checkdb_tooltip "Vérifier l'intégrité de la base de données des marque-pages">
+<!ENTITY quick_db "Vérification rapide">
+<!ENTITY thorough_db "Vérification approfondie">
+<!ENTITY compact_db "Compacter la base de données">
+<!ENTITY compact_tooltip "Compacter / vider la base de données des marque-pages">
+<!ENTITY id "ID">
+<!ENTITY date_added "Date ajoutée">
+<!ENTITY last_modified "Dernière modification">
+<!ENTITY keyword "Mot-clé">
+<!ENTITY tags "Étiquettes">
+<!ENTITY description "Description">
+<!ENTITY database "Base de données :">
+<!ENTITY compacted "Compactée">
+<!ENTITY check_failed "Échec de la vérification">
+<!ENTITY compact_failed "Échec du compactage">

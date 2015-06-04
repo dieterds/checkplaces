@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Kontrollera om dina bokmärken är giltiga">
+<!ENTITY options "Kontrollinställningar">
+<!ENTITY include_folders "Välj mappar att inkludera">
+<!ENTITY selection_default "Som standard kommer allt att inkluderas">
+<!ENTITY select_folders "Välj mappar">
+<!ENTITY includefolders_tooltip "Välj mapparna som skall inkluderas i kontrollen">
+<!ENTITY exclude_folders "Välj mappar att undanta">
+<!ENTITY excludefolders_tooltip "Välj mapparna som skall undantas från kontrollen">
+<!ENTITY show_excludes "Visa undantagna objekt">
+<!ENTITY display "Visningsinställningar">
+<!ENTITY show_bm "Bokmärken-menyn">
+<!ENTITY showbm_tooltip "Visa i Bokmärken-menyn">
+<!ENTITY show_tools "Verktyg-menyn">
+<!ENTITY showtools_tooltip "Visa i Verktyg-menyn">
+<!ENTITY show_org "Biblioteket (Ordna bokmärken...)">
+<!ENTITY showorg_tooltip "Visa i Biblioteket (Ordna bokmärken...)">
+<!ENTITY show_manage "Hantera bokmärken">
+<!ENTITY showmanage_tooltip "Visa i Hantera bokmärkens verktygsmeny">
+<!ENTITY check_button "Kontrollera bokmärken">
+<!ENTITY check_links "Kontrollera att sidor finns">
+<!ENTITY checklinks_tooltip "Kontrollera att varje bokmärkt sida fortfarande finns. Obs.: Kan ta tid att slutföra">
+<!ENTITY find_icons "Läs in sajtikoner">
+<!ENTITY findicons_tooltip "Leta efter och läs in saknade sajtikoner">
+<!ENTITY reload_icons "Uppdatera sajtikoner">
+<!ENTITY reloadicons_tooltip "Ersätt eventuella befintliga sajtikoner">
+<!ENTITY use_get "Kontrollera med GET">
+<!ENTITY useget_tooltip "Använd GET- istället för HEAD-förfrågan vid kontroll av länkar">
+<!ENTITY use_timeout "Tidsgräns (s)">
+<!ENTITY usetimeout_tooltip "Avbryt en kontroll när en viss tid har förflutit">
+<!ENTITY timeout_tooltip "Tid i sekunder innan en kontroll avbryts">
+<!ENTITY use_concurrency "Parallellkörning">
+<!ENTITY useconcurrency_tooltip "Begränsa hur många bokmärken som får kontrolleras samtidigt">
+<!ENTITY concurrency_tooltip "Antal bokmärken som kontrolleras samtidigt">
+<!ENTITY check_duplicates "Sök efter dubbletter">
+<!ENTITY checkduplicates_tooltip "Sök efter bokmärkesdubbletter">
+<!ENTITY delete_dup_dates "Ta bort datumdubbletter">
+<!ENTITY dupdates_tooltip "Se dokumentationen för närmare detaljer">
+<!ENTITY check_empty "Sök efter tomma mappar">
+<!ENTITY checkempty_tooltip "Sök efter mappar som är helt tomma">
+<!ENTITY what_to_check "Vad som kontrolleras">
+<!ENTITY folder_title "Välj mappar">
+<!ENTITY progress_title "Kontrollerar sidor...">
+<!ENTITY results_title "Resultat av CheckPlaces-kontrollen">
+<!ENTITY checked "Kontrollerad">
+<!ENTITY elapsed "Förfluten tid:">
+<!ENTITY mins "minuter">
+<!ENTITY bookmarks "Bokmärken:">
+<!ENTITY livemarks "Smarta bokmärken:">
+<!ENTITY pages "Sidor:">
+<!ENTITY folders "Mappar:">
+<!ENTITY excludedCount "Undantagna:">
+<!ENTITY found "Hittade">
+<!ENTITY bad "Ogiltiga URI:er">
+<!ENTITY failed_label "Misslyckades">
+<!ENTITY failed "Misslyckades">
+<!ENTITY inDoubt "Tvivelaktiga">
+<!ENTITY duplicates "Dubbletter">
+<!ENTITY empty "Tomma mappar">
+<!ENTITY cancelled "Avbröts">
+<!ENTITY excluded "Undantagna">
+<!ENTITY deleted "Borttagna">
+<!ENTITY open "Öppna">
+<!ENTITY open_tooltip "Öppna markerade bokmärken i flikar">
+<!ENTITY delete "Ta bort">
+<!ENTITY delete_tooltip "Ta bort markerade bokmärken">
+<!ENTITY deletefolders_tooltip "Ta bort markerade mappar">
+<!ENTITY deleteall "Ta bort alla">
+<!ENTITY deleteall_tooltip "Ta bort alla bokmärken i listan">
+<!ENTITY deleteallfolders_tooltip "Ta bort alla mappar i listan">
+<!ENTITY delete_dups "Ta bort alla dubbletter">
+<!ENTITY deletedups_tooltip "Ta bort alla dubbletter och lämna ett kvarvarande bokmärke">
+<!ENTITY keepfirst "Ta bort alla utom det första">
+<!ENTITY keepfirst_tooltip "Ta bort alla dubbletter förutom originalbokmärket">
+<!ENTITY keeplast "Ta bort alla utom det senaste">
+<!ENTITY keeplast_tooltip "Ta bort alla dubbletter förutom det senast tillagda bokmärket">
+<!ENTITY exclude "Undanta">
+<!ENTITY exclude_tooltip "Undanta markerade bokmärken från nästa kontroll">
+<!ENTITY excludeall "Undanta alla">
+<!ENTITY excludeall_tooltip "Undanta alla bokmärken i listan från nästa kontroll">
+<!ENTITY include "Inkludera">
+<!ENTITY include_tooltip "Inkludera markerade bokmärken">
+<!ENTITY includeall "Inkludera alla">
+<!ENTITY includeall_tooltip "Inkludera alla bokmärken i listan">
+<!ENTITY restore "Återställ">
+<!ENTITY restore_tooltip "Återställ markerade bokmärken">
+<!ENTITY restoreall "Återställ alla">
+<!ENTITY restoreall_tooltip "Återställ alla bokmärken i listan">
+<!ENTITY fix "Åtgärda 301">
+<!ENTITY fix_tooltip "Uppdatera bokmärket med omdirigerings-URL:en">
+<!ENTITY fixall "Åtgärda alla 301:or">
+<!ENTITY fixall_tooltip "Använd omdirigerings-URL:en för alla 301:or">
+<!ENTITY dns "DNS-fel">
+<!ENTITY s400 "Sidfel">
+<!ENTITY s500 "Serverfel">
+<!ENTITY noFile "Saknade filer">
+<!ENTITY others "Övriga fel">
+<!ENTITY details "Detaljer">
+<!ENTITY status "Status/Antal">
+<!ENTITY path "Sökväg">
+<!ENTITY name "Namn">
+<!ENTITY location "Plats">
+<!ENTITY no_problems "Inga problem hittades">
+<!ENTITY dialog_title "Varning">
+<!ENTITY report_error "Rapportera problem">
+<!ENTITY save "Spara">
+<!ENTITY check "Kontrollera">
+<!ENTITY check_db "Kontrollera Places-databasen">
+<!ENTITY checkdb_tooltip "Kontrollera integriteten hos Places-databasen">
+<!ENTITY quick_db "Snabbkontroll">
+<!ENTITY thorough_db "Fullständig kontroll">
+<!ENTITY compact_db "Komprimera databasen">
+<!ENTITY compact_tooltip "Komprimera/städa Places-databasen">
+<!ENTITY id "ID">
+<!ENTITY date_added "Tilläggsdatum">
+<!ENTITY last_modified "Senast ändrad">
+<!ENTITY keyword "Nyckelord">
+<!ENTITY tags "Taggar">
+<!ENTITY description "Beskrivning">
+<!ENTITY database "Databas:">
+<!ENTITY compacted "Komprimerad">
+<!ENTITY check_failed "Kontrollen misslyckades">
+<!ENTITY compact_failed "Komprimeringen misslyckades">

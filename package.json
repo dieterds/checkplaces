@@ -1,0 +1,28 @@
+{
+  "name": "checkplaces",
+  "title": "CheckPlaces",
+  "id": "checkplaces@andyhalford.com",
+  "description": "CheckPlaces.",
+  "author": "Andy Halford",
+  "contributors": ["dieterds"],
+  "translators": [
+  "Jojaba (fr)"
+  ,"Leszek (teo) Zyczkowski (pl)"
+  ,"Team erweiterungen.de (de)"
+  ,"Wawuschel (de)"
+  ,"57_homer (de)"
+  ,"Edgard Dias Magalhaes (pt-BR)"
+  ,"yfdyh000 (zh-CN)"
+  ,"nikneyim (tr)"
+  ,"Christiansen (da)"
+  ,"shyangs (zh-TW)"
+  ,"Wtspout (ko-KR)"
+  ,"Kozak Csaba (WonderCsabo) (hu)"
+  ,"PetrTwo (cs-CZ)"
+  ,"Mikael Hiort af Ornaes (sv-SE)"
+],
+  "license": "MPL 2.0",
+  "icon": "data/icon.png",
+  "dependencies": ["menuitems", "addon-sdk"],
+  "version": "2.7.0"
+}

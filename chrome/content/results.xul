@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "chrome://checkplaces/locale/checkplaces.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://checkplaces-os/skin/checkplaces.css" type="text/css"?>
+
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the CheckPlaces extension.
+   -
+   - The Initial Developer of the Original Code is Andy Halford.
+   - Portions created by the Initial Developer are Copyright (C) 2009-2011
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<dialog id="checkplacesResults"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="&results_title;"
+        buttons="accept,extra1"
+        buttonlabelextra1="&save;"
+        onload="CheckPlacesResults.onDialogLoad();"
+        ondialogaccept="return CheckPlacesResults.onDialogAccept();"
+        ondialogextra1="return CheckPlacesResults.onDialogSave();"
+        persist="screenX screenY">
+
+  <script type="application/x-javascript" src="chrome://checkplaces/content/results.js" />
+
+	<hbox flex="1">
+		<vbox>
+			<groupbox>
+				<caption label="&checked;" />
+				<hbox id="database">
+					<label value="&database;" style="margin-right:2px" />
+					<label id="dbChecked" value="&checked;" style="margin-right:2px" />
+					<label id="dbCheckFailed" value="&check_failed;" style="margin-right:2px" hidden="true" />
+					<label id="dbCompacted" value="&compacted;" style="margin-right:2px" />
+					<label id="dbCompactFailed" value="&compact_failed;" style="margin-right:2px" hidden="true" />
+				</hbox>
+				<hbox>
+					<label value="&bookmarks;" style="margin-right:2px" />
+					<label id="bookmarkCount" style="margin-left:0" />
+					<label value="&livemarks;" style="margin-right:2px" />
+					<label id="livemarkCount" style="margin-left:0" />
+					<label value="&pages;" style="margin-right:2px" />
+					<label id="pageCount" style="margin-left:0" />
+					<label value="&folders;" style="margin-right:2px" />
+					<label id="folderCount" style="margin-left:0" />
+					<label value="&excludedCount;" style="margin-right:2px" />
+					<label id="excludedCount" style="margin-left:0" />
+				</hbox>
+				<hbox>
+					<label value="&elapsed;" style="margin-right:2px" />
+					<label id="elapsed" style="margin-left:0;margin-right:2px" />
+					<label value="&mins;" style="margin-left:0" />
+				</hbox>
+				<separator class="thin"/>
+				<vbox align ="center">
+					<label id="no_problems" value="&no_problems;" />
+				</vbox>
+			</groupbox>
+
+			<groupbox id="found">
+				<caption label="&found;" />
+				<hbox>
+					<label id="failedLabel" value="&failed_label;:" style="margin-right:4px" />
+					<label id="dnsListLabel" value="&dns;:" style="margin-right:2px" />
+					<label id="dnsListCount" style="margin-left:0" />
+					<label id="pageErrorListLabel" value="&s400;:" style="margin-right:2px" />
+					<label id="pageErrorListCount" style="margin-left:0" />
+					<label id="serverErrorListLabel" value="&s500;:" style="margin-right:2px" />
+					<label id="serverErrorListCount" style="margin-left:0" />
+					<label id="noFileListLabel" value="&noFile;:" style="margin-right:2px" />
+					<label id="noFileListCount" style="margin-left:0" />
+					<label id="failedListLabel" value="&others;:" style="margin-right:2px" />
+					<label id="failedListCount" style="margin-left:0" />
+				</hbox>
+				<hbox>
+					<label id="badListLabel" value="&bad;:" style="margin-right:2px" />
+					<label id="badListCount" style="margin-left:0" />
+					<label id="questionableListLabel" value="&inDoubt;:" style="margin-right:2px" />
+					<label id="questionableListCount" style="margin-left:0" />
+					<label id="duplicatesListLabel" value="&duplicates;:" style="margin-right:2px" />
+					<label id="duplicatesListCount" style="margin-left:0" />
+					<label id="emptyListLabel" value="&empty;:" style="margin-right:2px" />
+					<label id="emptyListCount" style="margin-left:0" />
+					<label id="cancelledListLabel" value="&cancelled;:" style="margin-right:2px" />
+					<label id="cancelledListCount" style="margin-left:0" />
+					<label id="excludedListLabel" value="&excluded;:" style="margin-right:2px" />
+					<label id="excludedListCount" style="margin-left:0" />
+				</hbox>
+				<separator class="thin"/>
+			</groupbox>
+
+			<tabbox flex="1">
+				<tabs id="mainTabs" onselect="CheckPlacesResults.changeTabs()">
+					<tab label="&bad;" id="badListTab"/>
+					<tab label="&failed;" id="failedListsTab" />
+					<tab label="&inDoubt;" id="questionableListTab"/>
+					<tab label="&duplicates;" id="duplicatesListTab"/>
+					<tab label="&empty;" id="emptyListTab"/>
+					<tab label="&cancelled;" id="cancelledListTab"/>
+					<tab label="&excluded;" id="excludedListTab"/>
+					<tab label="&deleted;" id="deletedListTab"/>
+				</tabs>
+				<tabpanels id="mainPanels" flex="1">
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="badList" rows="5" onselect="CheckPlacesResults.displayDetails('badList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('badList');" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_badList" label="&open;" oncommand="CheckPlacesResults.openBookmark('badList');" tooltiptext="&open_tooltip;" />
+											<button id="delete_badList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('badList');" tooltiptext="&delete_tooltip;" />
+											<button id="deleteall_badList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('badList');" tooltiptext="&deleteall_tooltip;" />
+											<button id="exclude_badList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('badList');" tooltiptext="&exclude_tooltip;" />
+											<button id="excludeall_badList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('badList');" tooltiptext="&excludeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<tabbox flex="1">
+							<tabs id="failedTabs" onselect="CheckPlacesResults.changeTabs()">
+								<tab label="&dns;" id="dnsListTab"/>
+								<tab label="&s400;" id="pageErrorListTab" />
+								<tab label="&s500;" id="serverErrorListTab"/>
+								<tab label="&noFile;" id="noFileListTab"/>
+								<tab label="&others;" id="failedListTab"/>
+							</tabs>
+							<tabpanels id="mainPanels" flex="1">
+								<tabpanel orient="vertical">
+									<grid flex="1">
+										<columns align="center">
+											<column flex="1" />
+										</columns>
+										<rows>
+											<row flex="1">
+												<listbox id="dnsList" rows="5" onselect="CheckPlacesResults.displayDetails('dnsList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('dnsList');" />
+											</row>
+											<row align="center">
+												<vbox align ="center">
+													<separator class="thin"/>
+													<hbox>
+														<button id="open_dnsList" label="&open;" oncommand="CheckPlacesResults.openBookmark('dnsList');" tooltiptext="&open_tooltip;" />
+														<button id="delete_dnsList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('dnsList');" tooltiptext="&delete_tooltip;" />
+														<button id="deleteall_dnsList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('dnsList');" tooltiptext="&deleteall_tooltip;" />
+														<button id="exclude_dnsList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('dnsList');" tooltiptext="&exclude_tooltip;" />
+														<button id="excludeall_dnsList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('dnsList');" tooltiptext="&excludeall_tooltip;" />
+													</hbox>
+												</vbox>
+											</row>
+										</rows>
+									</grid>
+								</tabpanel>
+								<tabpanel orient="vertical">
+									<grid flex="1">
+										<columns align="center">
+											<column flex="1" />
+										</columns>
+										<rows>
+											<row flex="1">
+												<listbox id="pageErrorList" rows="5" onselect="CheckPlacesResults.displayDetails('pageErrorList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('pageErrorList');" />
+											</row>
+											<row align="center">
+												<vbox align ="center">
+													<separator class="thin"/>
+													<hbox>
+														<button id="open_pageErrorList" label="&open;" oncommand="CheckPlacesResults.openBookmark('pageErrorList');" tooltiptext="&open_tooltip;" />
+														<button id="delete_pageErrorList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('pageErrorList');" tooltiptext="&delete_tooltip;" />
+														<button id="deleteall_pageErrorList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('pageErrorList');" tooltiptext="&deleteall_tooltip;" />
+														<button id="exclude_pageErrorList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('pageErrorList');" tooltiptext="&exclude_tooltip;" />
+														<button id="excludeall_pageErrorList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('pageErrorList');" tooltiptext="&excludeall_tooltip;" />
+													</hbox>
+												</vbox>
+											</row>
+										</rows>
+									</grid>
+								</tabpanel>
+								<tabpanel orient="vertical">
+									<grid flex="1">
+										<columns align="center">
+											<column flex="1" />
+										</columns>
+										<rows>
+											<row flex="1">
+												<listbox id="serverErrorList" rows="5" onselect="CheckPlacesResults.displayDetails('serverErrorList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('serverErrorList');" />
+											</row>
+											<row align="center">
+												<vbox align ="center">
+													<separator class="thin"/>
+													<hbox>
+														<button id="open_serverErrorList" label="&open;" oncommand="CheckPlacesResults.openBookmark('serverErrorList');" tooltiptext="&open_tooltip;" />
+														<button id="delete_serverErrorList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('serverErrorList');" tooltiptext="&delete_tooltip;" />
+														<button id="deleteall_serverErrorList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('serverErrorList');" tooltiptext="&deleteall_tooltip;" />
+														<button id="exclude_serverErrorList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('serverErrorList');" tooltiptext="&exclude_tooltip;" />
+														<button id="excludeall_serverErrorList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('serverErrorList');" tooltiptext="&excludeall_tooltip;" />
+													</hbox>
+												</vbox>
+											</row>
+										</rows>
+									</grid>
+								</tabpanel>
+								<tabpanel orient="vertical">
+									<grid flex="1">
+										<columns align="center">
+											<column flex="1" />
+										</columns>
+										<rows>
+											<row flex="1">
+												<listbox id="noFileList" rows="5" onselect="CheckPlacesResults.displayDetails('noFileList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('noFileList');" />
+											</row>
+											<row align="center">
+												<vbox align ="center">
+													<separator class="thin"/>
+													<hbox>
+														<button id="open_noFileList" label="&open;" oncommand="CheckPlacesResults.openBookmark('noFileList');" tooltiptext="&open_tooltip;" />
+														<button id="delete_noFileList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('noFileList');" tooltiptext="&delete_tooltip;" />
+														<button id="deleteall_noFileList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('noFileList');" tooltiptext="&deleteall_tooltip;" />
+														<button id="exclude_noFileList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('noFileList');" tooltiptext="&exclude_tooltip;" />
+														<button id="excludeall_noFileList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('noFileList');" tooltiptext="&excludeall_tooltip;" />
+													</hbox>
+												</vbox>
+											</row>
+										</rows>
+									</grid>
+								</tabpanel>
+								<tabpanel orient="vertical">
+									<grid flex="1">
+										<columns align="center">
+											<column flex="1" />
+										</columns>
+										<rows>
+											<row flex="1">
+												<listbox id="failedList" rows="5" onselect="CheckPlacesResults.displayDetails('failedList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('failedList');" />
+											</row>
+											<row align="center">
+												<vbox align ="center">
+													<separator class="thin"/>
+													<hbox>
+														<button id="open_failedList" label="&open;" oncommand="CheckPlacesResults.openBookmark('failedList');" tooltiptext="&open_tooltip;" />
+														<button id="delete_failedList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('failedList');" tooltiptext="&delete_tooltip;" />
+														<button id="deleteall_failedList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('failedList');" tooltiptext="&deleteall_tooltip;" />
+														<button id="exclude_failedList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('failedList');" tooltiptext="&exclude_tooltip;" />
+														<button id="excludeall_failedList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('failedList');" tooltiptext="&excludeall_tooltip;" />
+													</hbox>
+												</vbox>
+											</row>
+										</rows>
+									</grid>
+								</tabpanel>
+							</tabpanels>
+						</tabbox>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="questionableList" rows="5" onselect="CheckPlacesResults.displayDetails('questionableList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('questionableList');" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_questionableList" label="&open;" oncommand="CheckPlacesResults.openBookmark('questionableList');" tooltiptext="&open_tooltip;" />
+											<button id="delete_questionableList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('questionableList');" tooltiptext="&delete_tooltip;" />
+											<button id="deleteall_questionableList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('questionableList');" tooltiptext="&deleteall_tooltip;" />
+											<button id="exclude_questionableList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('questionableList');" tooltiptext="&exclude_tooltip;" />
+											<button id="excludeall_questionableList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('questionableList');" tooltiptext="&excludeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="fix_questionableList" label="&fix;" oncommand="CheckPlacesResults.fixBookmark();" tooltiptext="&fix_tooltip;" />
+											<button id="fixall_questionableList" label="&fixall;" oncommand="CheckPlacesResults.fixBookmarks();" tooltiptext="&fixall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns>
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="duplicatesList" rows="3" onselect="CheckPlacesResults.displayDuplicates();" seltype="single" ondblclick="CheckPlacesResults.openBookmark('duplicatesList');" />
+								</row>
+								<row>
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_dups" label="&open;" oncommand="CheckPlacesResults.openBookmark('duplicatesList');" tooltiptext="&open_tooltip;" />
+											<button id="delete_dups" label="&delete_dups;" oncommand="CheckPlacesResults.deleteDuplicates();" tooltiptext="&deletedups_tooltip;" />
+											<button id="excludeall_dups" label="&excludeall;" oncommand="CheckPlacesResults.excludeDuplicates();" tooltiptext="&excludeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+						<groupbox id="subList" flex="1">
+							<caption label="&duplicates;" />
+							<grid flex="1">
+								<columns>
+									<column flex="1" />
+								</columns>
+								<rows>
+									<row flex="1">
+										<listbox id="duplicatesSubList" rows="3" onselect="CheckPlacesResults.displayDuplicatesSubList();" seltype="multiple" />
+									</row>
+									<row>
+										<vbox align ="center">
+											<separator class="thin"/>
+											<hbox>
+												<button id="delete_duplicates" label="&delete;" oncommand="CheckPlacesResults.deleteDuplicate();" tooltiptext="&delete_tooltip;" />
+												<button id="exclude_dups" label="&exclude;" oncommand="CheckPlacesResults.excludeDuplicate();" tooltiptext="&exclude_tooltip;" />
+											</hbox>
+										</vbox>
+									</row>
+								</rows>
+							</grid>
+						</groupbox>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="emptyList" rows="5" onselect="CheckPlacesResults.displayDetails('emptyList');" seltype="multiple" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="delete_empty" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('emptyList');" tooltiptext="&deletefolders_tooltip;" />
+											<button id="deleteall_empty" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('emptyList');" tooltiptext="&deleteallfolders_tooltip;" />
+											<button id="exclude_empty" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('emptyList');" tooltiptext="&exclude_tooltip;" />
+											<button id="excludeall_empty" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('emptyList');" tooltiptext="&excludeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="cancelledList" rows="5" onselect="CheckPlacesResults.displayDetails('cancelledList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('cancelledList');" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_cancelledList" label="&open;" oncommand="CheckPlacesResults.openBookmark('cancelledList');" tooltiptext="&open_tooltip;" />
+											<button id="delete_cancelledList" label="&delete;" oncommand="CheckPlacesResults.deleteBookmark('cancelledList');" tooltiptext="&delete_tooltip;" />
+											<button id="deleteall_cancelledList" label="&deleteall;" oncommand="CheckPlacesResults.deleteBookmarks('cancelledList');" tooltiptext="&deleteall_tooltip;" />
+											<button id="exclude_cancelledList" label="&exclude;" oncommand="CheckPlacesResults.excludeBookmark('cancelledList');" tooltiptext="&exclude_tooltip;" />
+											<button id="excludeall_cancelledList" label="&excludeall;" oncommand="CheckPlacesResults.excludeBookmarks('cancelledList');" tooltiptext="&excludeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="excludedList" rows="5" onselect="CheckPlacesResults.displayDetails('excludedList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('excludedList');" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_excluded" label="&open;" oncommand="CheckPlacesResults.openBookmark('excludedList');" tooltiptext="&open_tooltip;" />
+											<button id="included_excluded" label="&include;" oncommand="CheckPlacesResults.restoreBookmark('excludedList');" tooltiptext="&include_tooltip;" />
+											<button id="includeall_excluded" label="&includeall;" oncommand="CheckPlacesResults.restoreBookmarks('excludedList');" tooltiptext="&includeall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+					<tabpanel orient="vertical">
+						<grid flex="1">
+							<columns align="center">
+								<column flex="1" />
+							</columns>
+							<rows>
+								<row flex="1">
+									<listbox id="deletedList" rows="5" onselect="CheckPlacesResults.displayDetails('deletedList');" seltype="multiple" ondblclick="CheckPlacesResults.openBookmark('deletedList');" />
+								</row>
+								<row align="center">
+									<vbox align ="center">
+										<separator class="thin"/>
+										<hbox>
+											<button id="open_deleted" label="&open;" oncommand="CheckPlacesResults.openBookmark('deletedList');" tooltiptext="&open_tooltip;" />
+											<button id="restore_deleted" label="&restore;" oncommand="CheckPlacesResults.restoreBookmark('deletedList');" tooltiptext="&restore_tooltip;" />
+											<button id="restoreall_deleted" label="&restoreall;" oncommand="CheckPlacesResults.restoreBookmarks('deletedList');" tooltiptext="&restoreall_tooltip;" />
+										</hbox>
+									</vbox>
+								</row>
+							</rows>
+						</grid>
+					</tabpanel>
+				</tabpanels>
+			</tabbox>
+		</vbox>
+
+		<groupbox id="detailsGroup" flex="1">
+			<caption label="&details;" />
+			<grid flex="1">
+				<columns>
+					<column align="right"/>
+					<column flex="1"/>
+				</columns>
+				<rows>
+					<row align="center">
+						<label value="&status;" />
+						<textbox id="status" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&path;" />
+						<textbox id="path" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&name;" />
+						<textbox id="name" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&location;" />
+						<textbox id="location" readonly="true" size="50" />
+					</row>
+					<row align="center">
+						<label value="&id;" />
+						<textbox id="id" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&date_added;" />
+						<textbox id="date_added" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&last_modified;" />
+						<textbox id="last_modified" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&tags;" />
+						<textbox id="tags" readonly="true" />
+					</row>
+					<row align="center">
+						<label value="&keyword;" />
+						<textbox id="keyword" readonly="true" />
+					</row>
+					<row align="top">
+						<label value="&description;" />
+						<textbox id="description" readonly="true" multiline="true" rows="5"/>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>
+	</hbox>
+</dialog>

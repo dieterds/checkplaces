@@ -1,0 +1,23 @@
+content  checkplaces  chrome/content/
+
+skin     checkplaces     classic/1.0  chrome/skin/common/
+skin     checkplaces-os  classic/1.0  chrome/skin/common/
+skin     checkplaces-os  classic/1.0  chrome/skin/mac3/		os=Darwin application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion<4.0b1
+skin     checkplaces-os  classic/1.0  chrome/skin/mac/		os=Darwin application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1
+skin     checkplaces-os  classic/1.0  chrome/skin/win/  	os=WINNT  application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1
+skin     checkplaces-os  classic/1.0  chrome/skin/seawin/ application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+locale   checkplaces  en-US  chrome/locale/en-US/
+locale   checkplaces  en-GB  chrome/locale/en-GB/
+locale   checkplaces  cs-CZ  chrome/locale/cs-CZ/
+locale   checkplaces  da     chrome/locale/da/
+locale   checkplaces  de     chrome/locale/de/
+locale   checkplaces  fr     chrome/locale/fr/
+locale   checkplaces  hu     chrome/locale/hu/
+locale   checkplaces  ko-KR  chrome/locale/ko-KR/
+locale   checkplaces  pl     chrome/locale/pl/
+locale   checkplaces  pt-BR  chrome/locale/pt-BR/
+locale   checkplaces  sv-SE  chrome/locale/sv-SE/
+locale   checkplaces  tr     chrome/locale/tr/
+locale   checkplaces  zh-CN  chrome/locale/zh-CN/
+locale   checkplaces  zh-TW  chrome/locale/zh-TW/

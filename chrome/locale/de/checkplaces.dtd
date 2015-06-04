@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Lesezeichen auf Gültigkeit prüfen">
+<!ENTITY options "Einstellungen">
+<!ENTITY include_folders "Einzuschließende Ordner auswählen">
+<!ENTITY selection_default "Standardmäßig werden alle Lesezeichen geprüft">
+<!ENTITY select_folders "Ordner auswählen">
+<!ENTITY includefolders_tooltip "Lesezeichen-Ordner zum Überprüfen auswählen">
+<!ENTITY exclude_folders "Auszuschließende Ordner auswählen">
+<!ENTITY excludefolders_tooltip "Lesezeichen-Ordner auswählen der von der Überprüfung ausgeschlossen werden soll">
+<!ENTITY show_excludes "Ausgeschlossene Elemente anzeigen">
+<!ENTITY display "Einstellungen anzeigen">
+<!ENTITY show_bm "Lesezeichen-Menü">
+<!ENTITY showbm_tooltip "CheckPlaces im Lesezeichen-Menü anzeigen">
+<!ENTITY show_tools "Menü &quot;Extras&quot;">
+<!ENTITY showtools_tooltip "ChecktPlaces im Menü &quot;Extras&quot; anzeigen">
+<!ENTITY show_org "Lesezeichen-Verwaltung">
+<!ENTITY showorg_tooltip "ChecktPlaces im der Symbolleiste der Lesezeichen-Verwaltung (Bibliothek) anzeigen">
+<!ENTITY show_manage "Lesezeichen verwalten">
+<!ENTITY showmanage_tooltip "&quot;Lesezeichen verwalten&quot; im Menü &quot;Extras&quot; anzeigen">
+<!ENTITY check_button "Lesezeichen jetzt überprüfen">
+<!ENTITY check_links "Seiten auf Erreichbarkeit überprüfen">
+<!ENTITY checklinks_tooltip "Jedes Lesezeichen und die zugehörige Seite wird auf Erreichbarkeit überprüft. HINWEIS: Der Vorgang kann längere Zeit dauern bis er abgeschlossen ist.">
+<!ENTITY find_icons "Identitätssymbole (Favicons) aktualisieren">
+<!ENTITY findicons_tooltip "Überprüfung und Laden fehlender Identitätssymbole">
+<!ENTITY reload_icons "Identitätssymbole (Favicons) überschreiben">
+<!ENTITY reloadicons_tooltip "Alle vorhandenen Identitätssymbole (Favicons) überschreiben">
+<!ENTITY use_get "GET-Methode zur Überprüfung von Links verwenden">
+<!ENTITY useget_tooltip "GET-Methode anstelle einer HEAD-Anfrage zur Überprüfung von Links nutzen">
+<!ENTITY use_timeout "Überprüfungsdauer (in Sek.)">
+<!ENTITY usetimeout_tooltip "Überprüfung nach Ablauf der eingestellten Zeit abbrechen">
+<!ENTITY timeout_tooltip "Zeit in Sekunden, nach welcher die Überprüfung abgebrochen wird">
+<!ENTITY use_concurrency "Gleichzeitigkeit">
+<!ENTITY useconcurrency_tooltip "Festlegen, wie viele Lesezeichen gleichzeitig überprüft werden sollen">
+<!ENTITY concurrency_tooltip "Anzahl von Lesezeichen die gleichzeitig geprüft werden sollen.">
+<!ENTITY check_duplicates "Duplikate suchen">
+<!ENTITY checkduplicates_tooltip "Nach doppelt vorhandenen Lesezeichen suchen">
+<!ENTITY delete_dup_dates "Doppelte Lesezeichen mit identischem Datum löschen">
+<!ENTITY dupdates_tooltip "Für mehr Informationen lesen Sie bitte die Dokumentation (engl.) auf der Seite des Autors">
+<!ENTITY check_empty "Leere Ordner suchen">
+<!ENTITY checkempty_tooltip "Nach vollständig leeren Ordner suchen">
+<!ENTITY what_to_check "Lesezeichen-Ordner auswählen">
+<!ENTITY folder_title "Ordner auswählen">
+<!ENTITY progress_title "Lesezeichen werden geprüft...">
+<!ENTITY results_title "CheckPlaces - Prüfergebnisse">
+<!ENTITY checked "Geprüfte Elemente:">
+<!ENTITY elapsed "Überprüfungsdauer:">
+<!ENTITY mins "Minuten">
+<!ENTITY bookmarks "Lesezeichen:">
+<!ENTITY livemarks "Dynamische Lesezeichen:">
+<!ENTITY pages "Seiten:">
+<!ENTITY folders "Ordner:">
+<!ENTITY excludedCount "Ausgeschlossene:">
+<!ENTITY found "Gefunden">
+<!ENTITY bad "Ungültige Adressen">
+<!ENTITY failed_label "Fehlgeschlagen">
+<!ENTITY failed "Ungültige Seiten">
+<!ENTITY inDoubt "Seiten mit Anmeldung">
+<!ENTITY duplicates "Doppelte Lesezeichen">
+<!ENTITY empty "Leerer Ordner">
+<!ENTITY cancelled "Ungeprüfte Seiten">
+<!ENTITY excluded "Ausgeschlossene Elemente">
+<!ENTITY deleted "Gelöschte Elemente">
+<!ENTITY open "Öffnen">
+<!ENTITY open_tooltip "Die ausgewählten Lesezeichen in Tabs öffnen">
+<!ENTITY delete "Löschen">
+<!ENTITY delete_tooltip "Das ausgewählte Lesezeichen löschen">
+<!ENTITY deletefolders_tooltip "Den ausgewählten Ordner löschen">
+<!ENTITY deleteall "Alle löschen">
+<!ENTITY deleteall_tooltip "Alle angezeigten Lesezeichen werden gelöscht">
+<!ENTITY deleteallfolders_tooltip "Alle angezeigten Ordner werden gelöscht">
+<!ENTITY delete_dups "Alle doppelten Lesezeichen löschen">
+<!ENTITY deletedups_tooltip "Löscht alle Duplikate, bis auf ein verbleibendes Lesezeichen">
+<!ENTITY keepfirst "Alle außer das Erste">
+<!ENTITY keepfirst_tooltip "Alle Duplikate außer dem zuerst hinzugefügten werden gelöscht">
+<!ENTITY keeplast "Alle außer das Letzte">
+<!ENTITY keeplast_tooltip "Alle Duplikate außer dem zuletzt hinzugefügten werden gelöscht.">
+<!ENTITY exclude "Ausschlüsse">
+<!ENTITY exclude_tooltip "Die ausgewählten Lesezeichen bei der nächsten Überprüfung ausschließen">
+<!ENTITY excludeall "Alle ausschließen">
+<!ENTITY excludeall_tooltip "Alle Lesezeichen in der Liste bei der nächsten Überprüfung ausschließen">
+<!ENTITY include "Einbeziehen">
+<!ENTITY include_tooltip "Die ausgewählten Lesezeichen wieder einschließen">
+<!ENTITY includeall "Alle überprüfen">
+<!ENTITY includeall_tooltip "Alle Lesezeichen in der Liste bei der nächsten Überprüfung wieder einschließen">
+<!ENTITY restore "Wiederherstellen">
+<!ENTITY restore_tooltip "Die ausgewählten Lesezeichen wiederherstellen">
+<!ENTITY restoreall "Alle Lesezeichen wiederherstellen">
+<!ENTITY restoreall_tooltip "Alle Lesezeichen der Liste wiederherstellen">
+<!ENTITY fix "&quot;Fehler 301&quot; korrigieren">
+<!ENTITY fix_tooltip "Lesezeichen entsprechend der Umleitungs-URL aktualisieren">
+<!ENTITY fixall "Alle &quot;Fehler 301&quot; korrigieren">
+<!ENTITY fixall_tooltip "Die Umleitungs-URL für alle Fehler 301 verwenden">
+<!ENTITY dns "DNS-Fehler">
+<!ENTITY s400 "Seiten-Ladefehler">
+<!ENTITY s500 "Server-Fehler">
+<!ENTITY noFile "Fehlende Dateien">
+<!ENTITY others "Andere Fehler">
+<!ENTITY details "Details">
+<!ENTITY status "Status/Anzahl">
+<!ENTITY path "Pfad">
+<!ENTITY name "Name">
+<!ENTITY location "Adresse">
+<!ENTITY no_problems "Überprüfung ohne erkennbare Probleme abgeschlossen">
+<!ENTITY dialog_title "Hinweis">
+<!ENTITY report_error "Problem melden">
+<!ENTITY save "Speichern">
+<!ENTITY check "Lesezeichen jetzt prüfen">
+<!ENTITY check_db "Places-Datenbank prüfen">
+<!ENTITY checkdb_tooltip "Die Integrität der Places-Datenbank wird überprüft">
+<!ENTITY quick_db "Kurzprüfung">
+<!ENTITY thorough_db "Gründliche Prüfung">
+<!ENTITY compact_db "Datenbank komprimieren">
+<!ENTITY compact_tooltip "Komprimierung/Bereinigung der Places-Datenbank">
+<!ENTITY id "ID">
+<!ENTITY date_added "Hinzugefügt">
+<!ENTITY last_modified "Zuletzt geändert">
+<!ENTITY keyword "Schlüsselwort">
+<!ENTITY tags "Schlagwörter">
+<!ENTITY description "Beschreibung">
+<!ENTITY database "Datenbank:">
+<!ENTITY compacted "Komprimiert">
+<!ENTITY check_failed "Überprüfung fehlgeschlagen">
+<!ENTITY compact_failed "Komprimierung fehlgeschlagen">

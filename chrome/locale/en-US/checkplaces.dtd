@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Checks bookmarks are valid">
+<!ENTITY options "Check options">
+<!ENTITY include_folders "Select folders to include">
+<!ENTITY selection_default "By default, everything will be included">
+<!ENTITY select_folders "Select folders">
+<!ENTITY includefolders_tooltip "Select the folders to include in the check">
+<!ENTITY exclude_folders "Select folders to exclude">
+<!ENTITY excludefolders_tooltip "Select the folders to exclude from the check">
+<!ENTITY show_excludes "Show excluded items">
+<!ENTITY display "Display options">
+<!ENTITY show_bm "Bookmarks menu">
+<!ENTITY showbm_tooltip "Display on Bookmarks menu">
+<!ENTITY show_tools "Tools menu">
+<!ENTITY showtools_tooltip "Display on Tools menu">
+<!ENTITY show_org "Bookmarks Organiser">
+<!ENTITY showorg_tooltip "Display on Bookmarks Organiser">
+<!ENTITY show_manage "Manage Bookmarks">
+<!ENTITY showmanage_tooltip "Display on Manage Bookmarks Tools menu">
+<!ENTITY check_button "Check Bookmarks">
+<!ENTITY check_links "Check pages exist">
+<!ENTITY checklinks_tooltip "Check that each bookmarked page still exists. NOTE: May take some time to complete">
+<!ENTITY find_icons "Load favicons">
+<!ENTITY findicons_tooltip "Look for and load missing favicons">
+<!ENTITY reload_icons "Reload favicons">
+<!ENTITY reloadicons_tooltip "Overwrite any existing favicons">
+<!ENTITY use_get "Check using GET">
+<!ENTITY useget_tooltip "Use GET instead of HEAD when testing links">
+<!ENTITY use_timeout "Timeout">
+<!ENTITY usetimeout_tooltip "Cancel a check after a certain time has elapsed">
+<!ENTITY timeout_tooltip "Time in seconds before a check is cancelled">
+<!ENTITY use_concurrency "Concurrency">
+<!ENTITY useconcurrency_tooltip "Limit how many bookmarks are checked concurrently">
+<!ENTITY concurrency_tooltip "Number of bookmarks checked concurrently">
+<!ENTITY check_duplicates "Check for duplicates">
+<!ENTITY checkduplicates_tooltip "Check for duplicate bookmarks">
+<!ENTITY delete_dup_dates "Delete duplicate dates">
+<!ENTITY dupdates_tooltip "See documentation for details">
+<!ENTITY check_empty "Check for empty folders">
+<!ENTITY checkempty_tooltip "Check for folders that are completely empty">
+<!ENTITY what_to_check "What to check">
+<!ENTITY folder_title "Select folders">
+<!ENTITY progress_title "Checking pages">
+<!ENTITY results_title "CheckPlaces Results">
+<!ENTITY checked "Checked">
+<!ENTITY elapsed "Elapsed time:">
+<!ENTITY mins "minutes">
+<!ENTITY bookmarks "Bookmarks:">
+<!ENTITY livemarks "Livemarks:">
+<!ENTITY pages "Pages:">
+<!ENTITY folders "Folders:">
+<!ENTITY excludedCount "Excluded:">
+<!ENTITY found "Found">
+<!ENTITY bad "Bad URIs">
+<!ENTITY failed_label "Failed">
+<!ENTITY failed "Failed">
+<!ENTITY inDoubt "Questionable">
+<!ENTITY duplicates "Duplicates">
+<!ENTITY empty "Empty folders">
+<!ENTITY cancelled "Canceled">
+<!ENTITY excluded "Excluded">
+<!ENTITY deleted "Deleted">
+<!ENTITY open "Open">
+<!ENTITY open_tooltip "Open the selected bookmarks in tabs">
+<!ENTITY delete "Delete">
+<!ENTITY delete_tooltip "Delete the selected bookmarks">
+<!ENTITY deletefolders_tooltip "Delete the selected folders">
+<!ENTITY deleteall "Delete all">
+<!ENTITY deleteall_tooltip "Delete all bookmarks in the list">
+<!ENTITY deleteallfolders_tooltip "Delete all folders in the list">
+<!ENTITY delete_dups "Delete all duplicates">
+<!ENTITY deletedups_tooltip "Delete all duplicates leaving one remaining bookmark">
+<!ENTITY keepfirst "Delete all but first">
+<!ENTITY keepfirst_tooltip "Delete all duplicates except the original one">
+<!ENTITY keeplast "Delete all but last">
+<!ENTITY keeplast_tooltip "Delete all duplicates except the last one added">
+<!ENTITY exclude "Exclude">
+<!ENTITY exclude_tooltip "Exclude the selected bookmarks from checking next time">
+<!ENTITY excludeall "Exclude all">
+<!ENTITY excludeall_tooltip "Exclude all bookmarks in the list from checking next time">
+<!ENTITY include "Include">
+<!ENTITY include_tooltip "Include the selected bookmarks again">
+<!ENTITY includeall "Include all">
+<!ENTITY includeall_tooltip "Include all bookmarks in the list again">
+<!ENTITY restore "Restore">
+<!ENTITY restore_tooltip "Restore the selected bookmarks again">
+<!ENTITY restoreall "Restore all">
+<!ENTITY restoreall_tooltip "Restore all bookmarks in the list again">
+<!ENTITY fix "Fix 301">
+<!ENTITY fix_tooltip "Update the bookmark with the redirect URL">
+<!ENTITY fixall "Fix all 301s">
+<!ENTITY fixall_tooltip "Use the redirect URL for all 301s">
+<!ENTITY dns "DNS errors">
+<!ENTITY s400 "Page errors">
+<!ENTITY s500 "Server errors">
+<!ENTITY noFile "Missing files">
+<!ENTITY others "Other errors">
+<!ENTITY details "Details">
+<!ENTITY status "Status/Count">
+<!ENTITY path "Path">
+<!ENTITY name "Name">
+<!ENTITY location "Location">
+<!ENTITY no_problems "No problems detected">
+<!ENTITY dialog_title "Alert">
+<!ENTITY report_error "Report Problem">
+<!ENTITY save "Save">
+<!ENTITY check "Check">
+<!ENTITY check_db "Check Places database">
+<!ENTITY checkdb_tooltip "Check the integrity of the Places database">
+<!ENTITY quick_db "Quick check">
+<!ENTITY thorough_db "Thorough check">
+<!ENTITY compact_db "Compact database">
+<!ENTITY compact_tooltip "Compact/Vacuum Places database">
+<!ENTITY id "ID">
+<!ENTITY date_added "Date added">
+<!ENTITY last_modified "Last modified">
+<!ENTITY keyword "Keyword">
+<!ENTITY tags "Tags">
+<!ENTITY description "Description">
+<!ENTITY database "Database:">
+<!ENTITY compacted "Compacted">
+<!ENTITY check_failed "Check failed">
+<!ENTITY compact_failed "Compact failed">

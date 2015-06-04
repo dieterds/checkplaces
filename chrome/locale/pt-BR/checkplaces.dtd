@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Verifica se os favoritos são válidos">
+<!ENTITY options "Opções de verificação">
+<!ENTITY include_folders "Selecionar pastas a incluir">
+<!ENTITY selection_default "Por padrão, tudo será incluído">
+<!ENTITY select_folders "Selecionar pastas">
+<!ENTITY includefolders_tooltip "Seleciona as pastas a incluir na verificação">
+<!ENTITY exclude_folders "Selecionar pastas a excluir">
+<!ENTITY excludefolders_tooltip "Seleciona as pastas a serem excluídas da verificação">
+<!ENTITY show_excludes "Exibe os itens excluídos">
+<!ENTITY display "Opções de exibição">
+<!ENTITY show_bm "Menu Favoritos">
+<!ENTITY showbm_tooltip "Exibir no menu Favoritos">
+<!ENTITY show_tools "Menu de Ferramentas">
+<!ENTITY showtools_tooltip "Exibe no menu de Ferramentas">
+<!ENTITY show_org "Organizador do Favoritos">
+<!ENTITY showorg_tooltip "Exibir no Organizador de Favoritos">
+<!ENTITY show_manage "Gerenciar Favoritos">
+<!ENTITY showmanage_tooltip "Exibir no menu Ferramentas de Gerenciamento de Favoritos">
+<!ENTITY check_button "Verifica Favoritos">
+<!ENTITY check_links "Verifica a existência das páginas">
+<!ENTITY checklinks_tooltip "Verifica se cada favorito ainda existe. NOTA: pode demorar algum tempo para completar">
+<!ENTITY find_icons "Carregar ícones de favoritos">
+<!ENTITY findicons_tooltip "Busca e carrega ícones perdidos de favoritos">
+<!ENTITY reload_icons "Atualizar ícones dos favoritos">
+<!ENTITY reloadicons_tooltip "Gravar sobre os ícones de favoritos já existentes">
+<!ENTITY use_get "Checar usando o GET">
+<!ENTITY useget_tooltip "Usa o GET ao invés do CABEÇALHO ao testar os enlaces">
+<!ENTITY use_timeout "Tempo excedido">
+<!ENTITY usetimeout_tooltip "Cancela a verificação depois de transcorrido certo tempo">
+<!ENTITY timeout_tooltip "Tempo em segundos antes de cancelar a verificação">
+<!ENTITY use_concurrency "Simultaneidade">
+<!ENTITY useconcurrency_tooltip "Limita o número de favoritos que são verificados ao mesmo tempo">
+<!ENTITY concurrency_tooltip "Número de favoritos verificados ao mesmo tempo">
+<!ENTITY check_duplicates "Verificar duplicações">
+<!ENTITY checkduplicates_tooltip "Busca por favoritos duplicados">
+<!ENTITY delete_dup_dates "Apaga dados duplicados">
+<!ENTITY dupdates_tooltip "Ver a documentação em busca de detalhes">
+<!ENTITY check_empty "Buscar por pastar vazias">
+<!ENTITY checkempty_tooltip "Busca pastas que estejam completamente vazias">
+<!ENTITY what_to_check "O que verificar">
+<!ENTITY folder_title "Selecionar pastas">
+<!ENTITY progress_title "Verificando páginas">
+<!ENTITY results_title "Resultados do CheckPlaces">
+<!ENTITY checked "Verificado">
+<!ENTITY elapsed "Tempo transcorrido:">
+<!ENTITY mins "minutos">
+<!ENTITY bookmarks "Favoritos:">
+<!ENTITY livemarks "Favoritos dinâmicos:">
+<!ENTITY pages "Páginas:">
+<!ENTITY folders "Pastas:">
+<!ENTITY excludedCount "Excluído:">
+<!ENTITY found "Encontrado">
+<!ENTITY bad "Endereços ruins">
+<!ENTITY failed_label "Páginas com falha">
+<!ENTITY failed "Páginas com falha">
+<!ENTITY inDoubt "Páginas duvidosas">
+<!ENTITY duplicates "Duplicadas">
+<!ENTITY empty "Pastas vazias">
+<!ENTITY cancelled "Páginas canceladas">
+<!ENTITY excluded "Itens excluídos">
+<!ENTITY deleted "Apagado">
+<!ENTITY open "Aberto">
+<!ENTITY open_tooltip "Abre  em abas os enlaces selecionados">
+<!ENTITY delete "Apagar">
+<!ENTITY delete_tooltip "Apaga os favoritos selecionados">
+<!ENTITY deletefolders_tooltip "Apaga os favoritos selecionados">
+<!ENTITY deleteall "Apagar tudo">
+<!ENTITY deleteall_tooltip "Apagar os favoritos listados">
+<!ENTITY deleteallfolders_tooltip "Apaga todas as pastas listadas">
+<!ENTITY delete_dups "Apagar todas duplicações">
+<!ENTITY deletedups_tooltip "Elimina todas duplicações mantendo apenas uma referência de cada">
+<!ENTITY keepfirst "Apagar todas as páginas duplicadas, menos a mais antiga">
+<!ENTITY keepfirst_tooltip "Apaga todas as páginas duplicadas, exceto a original">
+<!ENTITY keeplast "Apagar todas as páginas duplicadas, exceto a mais recente">
+<!ENTITY keeplast_tooltip "Apaga todas as páginas duplicadas, exceto a adicionada mais recentemente">
+<!ENTITY exclude "Excluir">
+<!ENTITY exclude_tooltip "Exclui da próxima verificação os favoritos selecionados">
+<!ENTITY excludeall "Exclui todos">
+<!ENTITY excludeall_tooltip "Exclui todos os favoritos da próxima verificação">
+<!ENTITY include "Incluir">
+<!ENTITY include_tooltip "Inclui novamente os favoritos selecionados">
+<!ENTITY includeall "Incluir todos">
+<!ENTITY includeall_tooltip "Inclui novamente na lista todos os favoritos">
+<!ENTITY restore "Restaurar">
+<!ENTITY restore_tooltip "Restaura os favoritos selecionados">
+<!ENTITY restoreall "Restaurar todos">
+<!ENTITY restoreall_tooltip "Restaura para a lista todos os favoritos">
+<!ENTITY fix "Corrigir 301">
+<!ENTITY fix_tooltip "Atualizar os favoritos com o endereço do redirecionamento">
+<!ENTITY fixall "Corrigir todos 301s">
+<!ENTITY fixall_tooltip "Use o endereço redirecionado para todos 301s">
+<!ENTITY dns "Erros de DNS">
+<!ENTITY s400 "Erros de página">
+<!ENTITY s500 "Erros de servidor">
+<!ENTITY noFile "Arquivos não encontrados">
+<!ENTITY others "Outros erros">
+<!ENTITY details "Detalhes">
+<!ENTITY status "Estado/Contador">
+<!ENTITY path "Caminho">
+<!ENTITY name "Nome">
+<!ENTITY location "Localização">
+<!ENTITY no_problems "Nenhum problema encontrado">
+<!ENTITY dialog_title "Alerta">
+<!ENTITY report_error "Informar problema">
+<!ENTITY save "Salvar">
+<!ENTITY check "Verificar">
+<!ENTITY check_db "Verificar Banco de dados de páginas">
+<!ENTITY checkdb_tooltip "Verifica a integridade dos bancos de dados de páginas">
+<!ENTITY quick_db "Verificação rápida">
+<!ENTITY thorough_db "Verificação Completa">
+<!ENTITY compact_db "Compactar banco de dados">
+<!ENTITY compact_tooltip "Compacta o banco de dados de páginas">
+<!ENTITY id "ID">
+<!ENTITY date_added "Dados acrescentados">
+<!ENTITY last_modified "Último modificado">
+<!ENTITY keyword "Palavra-chave">
+<!ENTITY tags "Rótulos">
+<!ENTITY description "Descrição">
+<!ENTITY database "Base de dados:">
+<!ENTITY compacted "Compactado">
+<!ENTITY check_failed "Falha na verificação">
+<!ENTITY compact_failed "Falha na compactação">

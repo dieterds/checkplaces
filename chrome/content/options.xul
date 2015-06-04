@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE dialog SYSTEM "chrome://checkplaces/locale/checkplaces.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://checkplaces-os/skin/checkplaces.css" type="text/css"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is the CheckPlaces extension.
+   -
+   - The Initial Developer of the Original Code is Andy Halford.
+   - Portions created by the Initial Developer are Copyright (C) 2009-2011
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<dialog id="checkplacesOptions"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="&title; 2.7.0"
+        onload="CheckPlaces.onDialogLoad();"
+        buttons="accept,cancel,extra2"
+        buttonlabelaccept="&save;"
+        buttonlabelextra2="&check;"
+        ondialogaccept="CheckPlaces.onDialogAccept();"
+        ondialogextra2="CheckPlaces.startChecking()"
+        persist="screenX screenY"
+        windowtype="checkPlacesOptions">
+
+  <script type="application/x-javascript" src="chrome://checkplaces/content/options.js" />
+  <script type="application/x-javascript" src="chrome://checkplaces/content/results.js" />
+
+	<hbox align="center" class="checkplacesLink">
+    <image />
+    <label class="text-link"
+			 href="http://www.andyhalford.com/checkplaces"
+			 value="http://www.andyhalford.com/checkplaces" />
+	</hbox>
+
+	<tabbox flex="1">
+		<tabs id="mainTabs">
+			<tab label="&options;" id="optionsTab" />
+			<tab label="&what_to_check;" id="whatTab"/>
+		</tabs>
+		<tabpanels id="mainPanels" flex="1">
+			<tabpanel orient="vertical">
+				<groupbox>
+					<checkbox id="check_duplicates" label="&check_duplicates;" tooltiptext="&checkduplicates_tooltip;" />
+					<checkbox id="check_empty" label="&check_empty;" tooltiptext="&checkempty_tooltip;" />
+					<checkbox id="check_db" label="&check_db;" tooltiptext="&checkdb_tooltip;" />
+					<checkbox id="compact_db" label="&compact_db;" tooltiptext="&compact_tooltip;" />
+					<checkbox id="check_links" label="&check_links;" tooltiptext="&checklinks_tooltip;" oncommand="CheckPlaces.toggleLinks();" />
+					<grid>
+						<columns align="center">
+							<column flex="1"/>
+							<column flex="0.5"/>
+							<column flex="0"/>
+							<column flex="2"/>
+						</columns>
+						<rows>
+							<row align="center">
+								<spacer />
+								<checkbox id="use_timeout" label="&use_timeout;" tooltiptext="&usetimeout_tooltip;" oncommand="CheckPlaces.toggleTimeout();" />
+								<textbox id="timeout" size="3" maxlength="3" type="number" min="10" max="180" tooltiptext="&timeout_tooltip;" />
+								<spacer />
+							</row>
+							<row align="center">
+								<spacer />
+								<checkbox id="use_concurrency" label="&use_concurrency;" tooltiptext="&useconcurrency_tooltip;" oncommand="CheckPlaces.toggleConcurrency();" />
+								<textbox id="concurrency" size="3" maxlength="3" type="number" min="1" max="999" tooltiptext="&concurrency_tooltip;" />
+								<spacer />
+							</row>
+							<row align="center">
+								<spacer />
+								<checkbox id="find_icons" label="&find_icons;" tooltiptext="&findicons_tooltip;" oncommand="CheckPlaces.toggleReload();" />
+								<checkbox id="reload_icons" label="&reload_icons;" tooltiptext="&reloadicons_tooltip;" />
+							</row>
+							<row align="center">
+								<spacer />
+								<checkbox id="use_get" label="&use_get;" tooltiptext="&useget_tooltip;" />
+							</row>
+						</rows>
+					</grid>
+				</groupbox>
+			</tabpanel>
+			<tabpanel orient="vertical">
+				<groupbox>
+					<grid>
+						<rows>
+							<row align="center">
+								<checkbox id="include" label="&include_folders;" oncommand="CheckPlaces.toggleIncludeFolders();" tooltiptext="&selection_default;" />
+								<button id="include_folders" label="&select_folders;" oncommand="CheckPlaces.selectBookmarkFolder(true);" tooltiptext="&includefolders_tooltip;" />
+							</row>
+							<row align="center">
+								<checkbox id="exclude" label="&exclude_folders;" oncommand="CheckPlaces.toggleExcludeFolders();" tooltiptext="&selection_default;" />
+								<button id="exclude_folders" label="&select_folders;" oncommand="CheckPlaces.selectBookmarkFolder(false);" tooltiptext="&excludefolders_tooltip;" />
+							</row>
+						</rows>
+					</grid>
+				</groupbox>
+				<separator class="thin"/>
+				<button id="show_excludes" label="&show_excludes;" oncommand="CheckPlaces.showExcludes()" />
+			</tabpanel>			
+		</tabpanels>
+  </tabbox>
+</dialog>

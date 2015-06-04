@@ -1,0 +1,123 @@
+<!ENTITY title "Sprawdź zakładki">
+<!ENTITY tooltip "Sprawdź ważność zakładek">
+<!ENTITY options "Opcje sprawdzania">
+<!ENTITY include_folders "Wybierz foldery do sprawdzenia">
+<!ENTITY selection_default "Domyślnie wszystkie będą sprawdzane">
+<!ENTITY select_folders "Wybierz foldery">
+<!ENTITY includefolders_tooltip "Wybierz foldery do sprawdzenia">
+<!ENTITY exclude_folders "Wybierz foldery do wykluczenia">
+<!ENTITY excludefolders_tooltip "Wybierz foldery wykluczane ze sprawdzania">
+<!ENTITY show_excludes "Wyświetlaj wykluczone elementy">
+<!ENTITY display "Opcje wyświetlania">
+<!ENTITY show_bm "Wyświetlaj w menu Zakładki">
+<!ENTITY showbm_tooltip "Wyświetla element Sprawdź zakładki w menu Zakładki">
+<!ENTITY show_tools "Wyświetlaj w menu Narzędzia">
+<!ENTITY showtools_tooltip "Wyświetla element Sprawdź zakładki w menu Narzędzia">
+<!ENTITY show_org "Wyświetlaj w bibliotece">
+<!ENTITY showorg_tooltip "Wyświetla element Sprawdź zakładki w bibliotece">
+<!ENTITY show_manage "Wyświetlaj Zarządzaj zakładkami">
+<!ENTITY showmanage_tooltip "Wyświetla element Zarządzaj zakładkami w menu Narzędzia">
+<!ENTITY check_button "Sprawdź zakładki">
+<!ENTITY check_links "Sprawdzaj czy strony nadal istnieją">
+<!ENTITY checklinks_tooltip "Sprawdza czy strony oznaczone zakładkami nadal istnieją. Operacja ta może zająć trochę czasu.">
+<!ENTITY find_icons "Wczytuj ikonki">
+<!ENTITY findicons_tooltip "Wyszukuje i wczytuje zagubione ikonki">
+<!ENTITY reload_icons "Odświeżaj favikony">
+<!ENTITY reloadicons_tooltip "Zastępuje wszystkie istniejące favikony">
+<!ENTITY use_get "Sprawdzaj używając żądania GET">
+<!ENTITY useget_tooltip "W trakcie testowania odnośników będzie używane żądanie GET zamiast of HEAD">
+<!ENTITY use_timeout "Limit czasu">
+<!ENTITY usetimeout_tooltip "Anuluje sprawdzanie po upłynięciu określonego tutaj czasu">
+<!ENTITY timeout_tooltip "Czas w sekundach po jakim sprawdzanie zostanie anulowane">
+<!ENTITY use_concurrency "Wielodostęp">
+<!ENTITY useconcurrency_tooltip "Limit zakładek sprawdzanych równocześnie">
+<!ENTITY concurrency_tooltip "Liczba zakładek sprawdzanych równocześnie">
+<!ENTITY check_duplicates "Sprawdzaj czy są duplikaty">
+<!ENTITY checkduplicates_tooltip "Sprawdza czy są duplikaty zakładek">
+<!ENTITY delete_dup_dates "Usuwaj duplikaty zakładek z taką samą datą dodania">
+<!ENTITY dupdates_tooltip "Zapoznaj się ze szczegółami w dokumentacji">
+<!ENTITY check_empty "Sprawdzaj czy są puste foldery">
+<!ENTITY checkempty_tooltip "Sprawdza czy są całkowicie puste foldery">
+<!ENTITY what_to_check "Sprawdzane elementy">
+<!ENTITY folder_title "Wybierz foldery">
+<!ENTITY progress_title "Sprawdzanie stron">
+<!ENTITY results_title "Wyniki sprawdzania zakładek">
+<!ENTITY checked "Sprawdzono">
+<!ENTITY elapsed "Czas trwania:">
+<!ENTITY mins "min">
+<!ENTITY bookmarks "Zakładki:">
+<!ENTITY livemarks "Dynamiczne zakładki:">
+<!ENTITY pages "Strony:">
+<!ENTITY folders "Foldery:">
+<!ENTITY excludedCount "Wykluczone:">
+<!ENTITY found "Znaleziono">
+<!ENTITY bad "Złe adresy URI">
+<!ENTITY failed_label "Błędy">
+<!ENTITY failed "Nieodnalezione strony">
+<!ENTITY inDoubt "Wątpliwe strony">
+<!ENTITY duplicates "Duplikaty">
+<!ENTITY empty "Puste foldery">
+<!ENTITY cancelled "Anulowane strony">
+<!ENTITY excluded "Elementy wykluczone">
+<!ENTITY deleted "Elementy usunięte">
+<!ENTITY open "Otwórz">
+<!ENTITY open_tooltip "Otwiera wybrane zakładki w kartach">
+<!ENTITY delete "Usuń">
+<!ENTITY delete_tooltip "Usuwa wybrane zakładki">
+<!ENTITY deletefolders_tooltip "Usuwa wybrane zakładki foldery">
+<!ENTITY deleteall "Usuń wszystko">
+<!ENTITY deleteall_tooltip "Usuwa wszystkie zakładki z listy">
+<!ENTITY deleteallfolders_tooltip "Usuwa wszystkie foldery z listy">
+<!ENTITY delete_dups "Usuń wszystkie duplikaty">
+<!ENTITY deletedups_tooltip "Usuwa wszystkie duplikaty pozostawiając jedną zakładkę">
+<!ENTITY keepfirst "Usuń nie oryginały">
+<!ENTITY keepfirst_tooltip "Usuwa wszystkie duplikaty z wyjątkiem oryginałów">
+<!ENTITY keeplast "Usuń bez ostatnio dodanych">
+<!ENTITY keeplast_tooltip "Usuwa wszystkie duplikaty z wyjątkiem ostatnio dodanych">
+<!ENTITY exclude "Wyklucz">
+<!ENTITY exclude_tooltip "Wyklucza wybrane zakładki ze sprawdzania">
+<!ENTITY excludeall "Wyklucz wszystkie">
+<!ENTITY excludeall_tooltip "Wyklucza ze sprawdzania wszystkie zakładki znajdujące się na liście">
+<!ENTITY include "Dołącz">
+<!ENTITY include_tooltip "Dołącza ponownie wybrane zakładki do sprawdzania">
+<!ENTITY includeall "Dołącz wszystkie">
+<!ENTITY includeall_tooltip "Dołącza ponownie wszystkie zakładki z listy">
+<!ENTITY restore "Odtwórz">
+<!ENTITY restore_tooltip "Odtwarza wybrane zakładki">
+<!ENTITY restoreall "Odtwórz wszystkie">
+<!ENTITY restoreall_tooltip "Odtwarza wszystkie zakładki">
+<!ENTITY fix "Napraw błąd 301">
+<!ENTITY fix_tooltip "Aktualizuj zakładkę z przekierowanym adresem URL">
+<!ENTITY fixall "Napraw wszystkie błędy 301">
+<!ENTITY fixall_tooltip "Użyj przekierowanego adresu URL dla wszystkich błędów 301">
+<!ENTITY dns "Błędy DNS">
+<!ENTITY s400 "Błędy strony">
+<!ENTITY s500 "Błędy serwera">
+<!ENTITY noFile "Zagubione pliki">
+<!ENTITY others "Inne błędy">
+<!ENTITY details "Szczegóły">
+<!ENTITY status "Status/Licznik">
+<!ENTITY path "Ścieżka">
+<!ENTITY name "Nazwa">
+<!ENTITY location "Lokalizacja">
+<!ENTITY no_problems "Nie wykryto problemów">
+<!ENTITY dialog_title "Ostrzeżenie">
+<!ENTITY report_error "Zgłoś problem">
+<!ENTITY save "Zapisz">
+<!ENTITY check "Sprawdź">
+<!ENTITY check_db "Sprawdź bazę danych zakładek">
+<!ENTITY checkdb_tooltip "Sprawdź spójność bazy danych zakładek">
+<!ENTITY quick_db "Szybkie sprawdzanie">
+<!ENTITY thorough_db "Gruntowne sprawdzanie">
+<!ENTITY compact_db "Kompaktuj bazę danych">
+<!ENTITY compact_tooltip "Kompaktuj/Wyczyść bazę danych zakładek">
+<!ENTITY id "ID">
+<!ENTITY date_added "Data dodania">
+<!ENTITY last_modified "Ostatnia modyfikacja">
+<!ENTITY keyword "Słowo kluczowe">
+<!ENTITY tags "Etykiety">
+<!ENTITY description "Opis">
+<!ENTITY database "Baza danych:">
+<!ENTITY compacted "Skompaktowana">
+<!ENTITY check_failed "Sprawdzanie się nie powiodło">
+<!ENTITY compact_failed "Kompaktowanie się nie powiodło">

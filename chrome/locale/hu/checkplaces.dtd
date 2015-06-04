@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Ellenőrzi a könyvjelzők érvényességét">
+<!ENTITY options "Ellenőrzési beállítások">
+<!ENTITY include_folders "Ellenőrzendő mappák">
+<!ENTITY selection_default "Alapértelmezetten az összes ellenőrizve lesz">
+<!ENTITY select_folders "Mappák kijelölése">
+<!ENTITY includefolders_tooltip "Ellenőrzendő mappák kijelölése">
+<!ENTITY exclude_folders "Kizárandó mappák kijelölése">
+<!ENTITY excludefolders_tooltip "Ellenőrzésből kizárandó mappák kijelölése">
+<!ENTITY show_excludes "Kizárt elemek mutatása">
+<!ENTITY display "Megjelenítési beállítások">
+<!ENTITY show_bm "Könyvjelzők menü">
+<!ENTITY showbm_tooltip "Megjelenítés a Könyvjelzők menüben">
+<!ENTITY show_tools "Eszközök menü">
+<!ENTITY showtools_tooltip "Megjelenítés az Eszközök menüben">
+<!ENTITY show_org "Könyvjelző könyvtár">
+<!ENTITY showorg_tooltip "Megjelenítés a Könyvjelző könyvtárban">
+<!ENTITY show_manage "Könyvjelzők kezelése">
+<!ENTITY showmanage_tooltip "Megjelenítés a Könyvjelzők kezelése menüben">
+<!ENTITY check_button "Könyvjelzők ellenőrzése">
+<!ENTITY check_links "Oldal létezésének ellenőrzése">
+<!ENTITY checklinks_tooltip "Ellenőrzi, h. az oldal él-e még. FIGYELEM: Több időt igénybe vehet">
+<!ENTITY find_icons "Ikonok letöltése">
+<!ENTITY findicons_tooltip "Megkeresi és letölti a hiányzó könyvjelző ikonokat">
+<!ENTITY reload_icons "Könyvjelzők újratöltése">
+<!ENTITY reloadicons_tooltip "Felülírja a létező ikonokat">
+<!ENTITY use_get "Ellenőrzése GET-tel">
+<!ENTITY useget_tooltip "GET-et használ a HEAD helyett az ellenőrzés során">
+<!ENTITY use_timeout "Időtúllépés">
+<!ENTITY usetimeout_tooltip "Ellenőrzés megszakítása bizonyos idő után">
+<!ENTITY timeout_tooltip "Idő másodpercben mielőtt az ellenőrzés megszakításra kerül">
+<!ENTITY use_concurrency "Egyidejűség">
+<!ENTITY useconcurrency_tooltip "Egyidőben ellenőrzött könyvjelzők számának korlátozása">
+<!ENTITY concurrency_tooltip "Azonos időben ellenőrzött könyvjelzők száma">
+<!ENTITY check_duplicates "Másolatok ellenőrzése">
+<!ENTITY checkduplicates_tooltip "Többszörös könyvjelzők ellenőrzése">
+<!ENTITY delete_dup_dates "Többszörözött könyvezők törlése">
+<!ENTITY dupdates_tooltip "Nézze meg a dokumentációt további információért">
+<!ENTITY check_empty "Üres mappák ellenőrzése">
+<!ENTITY checkempty_tooltip "Megnézi, hogy vannak-e teljesen üres mappák">
+<!ENTITY what_to_check "Mit ellenőrizzen">
+<!ENTITY folder_title "Mappák kijelölése">
+<!ENTITY progress_title "Oldalak ellenőrzése">
+<!ENTITY results_title "CheckPlaces eredmények">
+<!ENTITY checked "Ellenőrzött">
+<!ENTITY elapsed "Eltelt idő:">
+<!ENTITY mins "perc">
+<!ENTITY bookmarks "Könyvjelzők:">
+<!ENTITY livemarks "Élő könyvjelzők:">
+<!ENTITY pages "Oldalak:">
+<!ENTITY folders "Mappák:">
+<!ENTITY excludedCount "Kizárt:">
+<!ENTITY found "Talált">
+<!ENTITY bad "Hibás URIk">
+<!ENTITY failed_label "Sikertelen">
+<!ENTITY failed "Sikertelen">
+<!ENTITY inDoubt "Megkérdőjelezhető">
+<!ENTITY duplicates "Másolat">
+<!ENTITY empty "Üres mappák">
+<!ENTITY cancelled "Megszakított">
+<!ENTITY excluded "Kizárt">
+<!ENTITY deleted "Törölt">
+<!ENTITY open "Megnyitás">
+<!ENTITY open_tooltip "Kijelölt könyvjelzők megnyitása új füleken">
+<!ENTITY delete "Törlés">
+<!ENTITY delete_tooltip "Kijelölt könyvjelzők törlése">
+<!ENTITY deletefolders_tooltip "Kijelölt könyvjelzők törlése">
+<!ENTITY deleteall "Összes törlése">
+<!ENTITY deleteall_tooltip "A listán lévő összes könyvjelző törlése">
+<!ENTITY deleteallfolders_tooltip "A listában lévő összes könyvjelző törlése">
+<!ENTITY delete_dups "Összes másolat törlése">
+<!ENTITY deletedups_tooltip "Egy kivételével az összes többszörös törlése">
+<!ENTITY keepfirst "Törlés, kivéve az elsőt">
+<!ENTITY keepfirst_tooltip "Az összes többszörözött törlése kivéve az eredetit">
+<!ENTITY keeplast "Törlés, kivéve az utolsót">
+<!ENTITY keeplast_tooltip "Az összes többszörözött törlése, kivéve az utolsóként hozzáadottat">
+<!ENTITY exclude "Kizárás">
+<!ENTITY exclude_tooltip "A kijelölt könyvjelzők kizárása a további ellenőrzésből">
+<!ENTITY excludeall "Összes kizárása">
+<!ENTITY excludeall_tooltip "Az összes könyvjelző kizárása a további ellenőrzésből">
+<!ENTITY include "Beleszámít">
+<!ENTITY include_tooltip "A kijelölt könyvjelzők ellenőrzésbe vétele">
+<!ENTITY includeall "Az összes beleszámítása">
+<!ENTITY includeall_tooltip "Az összes könyvjelző ellenőrzésbe vétele">
+<!ENTITY restore "Visszaállítás">
+<!ENTITY restore_tooltip "A kijelölt könyvjelzők visszaállítása">
+<!ENTITY restoreall "Az összes könyvjelző visszaállítása">
+<!ENTITY restoreall_tooltip "A listában lévő összes könyvjelző visszaállítása">
+<!ENTITY fix "301-es hiba javítása">
+<!ENTITY fix_tooltip "Könyvjelző frissítése az átirányított URL-ra">
+<!ENTITY fixall "Összes 301-es hiba javítása">
+<!ENTITY fixall_tooltip "Az átirányított URL használata az összes 301-nél">
+<!ENTITY dns "DNS hibák">
+<!ENTITY s400 "Oldal hibák">
+<!ENTITY s500 "Szerver hibák">
+<!ENTITY noFile "Hiányzó fájlok">
+<!ENTITY others "Más hibák">
+<!ENTITY details "Részletek">
+<!ENTITY status "Állapot/Összes">
+<!ENTITY path "Elérési útvonal">
+<!ENTITY name "Név">
+<!ENTITY location "Hely">
+<!ENTITY no_problems "Nincsen észlelt hiba">
+<!ENTITY dialog_title "Figyelem">
+<!ENTITY report_error "Probléma jelzése">
+<!ENTITY save "Mentés">
+<!ENTITY check "Ellenőrzés">
+<!ENTITY check_db "Helyek adatbázis ellenőrzése">
+<!ENTITY checkdb_tooltip "Ellenőrizze a helyek adatbázis integritását">
+<!ENTITY quick_db "Gyors ellenőrzés">
+<!ENTITY thorough_db "Alapos ellenőrzés">
+<!ENTITY compact_db "Adatbázis tömörítése">
+<!ENTITY compact_tooltip "Adatbázis törlése/vakuumolása">
+<!ENTITY id "ID">
+<!ENTITY date_added "Létrehozva">
+<!ENTITY last_modified "Utoljára módosítva">
+<!ENTITY keyword "Kulcsszó">
+<!ENTITY tags "Címkék">
+<!ENTITY description "Leírás">
+<!ENTITY database "Adatbázis:">
+<!ENTITY compacted "Tömörítve">
+<!ENTITY check_failed "Ellenőrzése sikertelen">
+<!ENTITY compact_failed "Tömörítés sikertelen">

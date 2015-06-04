@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "북마크가 올바른지 점검">
+<!ENTITY options "검사 선택사항">
+<!ENTITY include_folders "포함할 폴더 선택">
+<!ENTITY selection_default "기본값은, 모든 것을 포함합니다.">
+<!ENTITY select_folders "폴더 선택">
+<!ENTITY includefolders_tooltip "검사에 포함할 폴더 선택">
+<!ENTITY exclude_folders "제외할 폴더 선택">
+<!ENTITY excludefolders_tooltip "검사로부터 제외할 폴더 선택">
+<!ENTITY show_excludes "제외할 항목 보기">
+<!ENTITY display "표시 선택사항">
+<!ENTITY show_bm "북마크 메뉴">
+<!ENTITY showbm_tooltip "북마크 메뉴에 표시">
+<!ENTITY show_tools "도구 메뉴">
+<!ENTITY showtools_tooltip "도구 메뉴에 표시">
+<!ENTITY show_org "북마크 관리…">
+<!ENTITY showorg_tooltip "북마크 관리…에 표시">
+<!ENTITY show_manage "북마크 관리">
+<!ENTITY showmanage_tooltip "북마크 관리 도구 메뉴 표시">
+<!ENTITY check_button "북마크 점검">
+<!ENTITY check_links "페이지 존재유무 검사">
+<!ENTITY checklinks_tooltip "각 북마크된 페이지가 여전히 존재하는지 검사. 참고:완료하는데 약간의 시간이 걸릴수 있음">
+<!ENTITY find_icons "파비콘 부르기">
+<!ENTITY findicons_tooltip "잃어버린 파비콘을 찾아서 부르기">
+<!ENTITY reload_icons "파비콘 다시 부르기">
+<!ENTITY reloadicons_tooltip "기존 파비콘을 덮어씁니다">
+<!ENTITY use_get "GET사용 검사">
+<!ENTITY useget_tooltip "연결 시험시 HEAD를 대신해 GET을 사용">
+<!ENTITY use_timeout "타임아웃">
+<!ENTITY usetimeout_tooltip "일정시간 경과후 검사 취소">
+<!ENTITY timeout_tooltip "검사가 취소되기 전까지의 초">
+<!ENTITY use_concurrency "병행">
+<!ENTITY useconcurrency_tooltip "얼마나 많은 북마크를 동시에 검사할지">
+<!ENTITY concurrency_tooltip "동시에 검사할 북마크의 수">
+<!ENTITY check_duplicates "중복 검사">
+<!ENTITY checkduplicates_tooltip "중복된 북마크 검사">
+<!ENTITY delete_dup_dates "중복 날짜 삭제">
+<!ENTITY dupdates_tooltip "상세 문서 보기">
+<!ENTITY check_empty "빈 폴더 검사">
+<!ENTITY checkempty_tooltip "폴더가 완전히 비어있는지 검사">
+<!ENTITY what_to_check "검사할 것들">
+<!ENTITY folder_title "폴더 선택">
+<!ENTITY progress_title "페이지 검사">
+<!ENTITY results_title "CheckPlaces 결과">
+<!ENTITY checked "검사됨">
+<!ENTITY elapsed "경과 시간:">
+<!ENTITY mins "분">
+<!ENTITY bookmarks "북마크:">
+<!ENTITY livemarks "Livemarks:">
+<!ENTITY pages "페이지:">
+<!ENTITY folders "폴더:">
+<!ENTITY excludedCount "제외:">
+<!ENTITY found "발견">
+<!ENTITY bad "잘못된 URI">
+<!ENTITY failed_label "실패">
+<!ENTITY failed "실패">
+<!ENTITY inDoubt "의심스런">
+<!ENTITY duplicates "중복">
+<!ENTITY empty "빈 폴더">
+<!ENTITY cancelled "취소됨">
+<!ENTITY excluded "제외됨">
+<!ENTITY deleted "삭제됨">
+<!ENTITY open "열기">
+<!ENTITY open_tooltip "탭내 선택된 북마크 열기">
+<!ENTITY delete "삭제">
+<!ENTITY delete_tooltip "선택된 북마크 삭제">
+<!ENTITY deletefolders_tooltip "선택된 폴더 삭제">
+<!ENTITY deleteall "모두 삭제">
+<!ENTITY deleteall_tooltip "목록내 모든 북마크 삭제">
+<!ENTITY deleteallfolders_tooltip "목록내 모든 폴더 삭제">
+<!ENTITY delete_dups "모든 중복 삭제">
+<!ENTITY deletedups_tooltip "북마크 하나를 남겨두고 모든 중복 삭제">
+<!ENTITY keepfirst "첫번째를 제외한 모두 삭제">
+<!ENTITY keepfirst_tooltip "원본 하나를 제외한 모든 중복을 삭제">
+<!ENTITY keeplast "마지막을 제외한 모두 삭제">
+<!ENTITY keeplast_tooltip "마지막에 추가된 것을 제외한 모든 중복 삭제">
+<!ENTITY exclude "제외">
+<!ENTITY exclude_tooltip "다음번 검사시 선택된 북마크 제외">
+<!ENTITY excludeall "모두 제외">
+<!ENTITY excludeall_tooltip "다음번 검사시 목록내 모든 북마크 제외">
+<!ENTITY include "포함">
+<!ENTITY include_tooltip "선택된 북마크 다시 포함">
+<!ENTITY includeall "모두 포함">
+<!ENTITY includeall_tooltip "목록내 모든 북마크 다시 포함">
+<!ENTITY restore "복구">
+<!ENTITY restore_tooltip "선택된 북마크 다시 복구">
+<!ENTITY restoreall "모두 복구">
+<!ENTITY restoreall_tooltip "목록내 모든 북마크 다시 복구">
+<!ENTITY fix "301 수정">
+<!ENTITY fix_tooltip "이 URL을 경로 재지정하여 북마크를 업데이트">
+<!ENTITY fixall "모든 301 수정">
+<!ENTITY fixall_tooltip "모든 301에 재지정된 URL을 사용">
+<!ENTITY dns "DNS 오류">
+<!ENTITY s400 "페이지 오류">
+<!ENTITY s500 "서버 오류">
+<!ENTITY noFile "파일 분실">
+<!ENTITY others "기타 오류">
+<!ENTITY details "상세">
+<!ENTITY status "상태/갯수">
+<!ENTITY path "경로">
+<!ENTITY name "이름">
+<!ENTITY location "위치">
+<!ENTITY no_problems "검출된 문제 없음">
+<!ENTITY dialog_title "경고">
+<!ENTITY report_error "문제 보고">
+<!ENTITY save "저장">
+<!ENTITY check "검사">
+<!ENTITY check_db "Places 데이터베이스 검사">
+<!ENTITY checkdb_tooltip "Places 데이터베이스의 보전성 검사">
+<!ENTITY quick_db "빠른 검사">
+<!ENTITY thorough_db "철저하게 검사">
+<!ENTITY compact_db "데이터베이스 압축">
+<!ENTITY compact_tooltip "Places 데이터베이스 압축/청소">
+<!ENTITY id "ID">
+<!ENTITY date_added "생성일">
+<!ENTITY last_modified "최종 수정일">
+<!ENTITY keyword "주제어">
+<!ENTITY tags "태그">
+<!ENTITY description "설명">
+<!ENTITY database "데이터베이스:">
+<!ENTITY compacted "압축된">
+<!ENTITY check_failed "검사 실패">
+<!ENTITY compact_failed "압축 실패">

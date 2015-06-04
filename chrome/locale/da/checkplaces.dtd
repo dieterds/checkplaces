@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Kontroller at bogmærkerne er gyldige">
+<!ENTITY options "Kontrolindstillinger">
+<!ENTITY include_folders "Vælg mapper som medtages">
+<!ENTITY selection_default "Alt vil som standard blive medtaget">
+<!ENTITY select_folders "Vælg mapper">
+<!ENTITY includefolders_tooltip "Vælg hvilke mapper der skal medtages i kontrol">
+<!ENTITY exclude_folders "Vælg mapper som undlades">
+<!ENTITY excludefolders_tooltip "Vælg mapper som skal undlades fra kontrollen">
+<!ENTITY show_excludes "Vis undladte punkter">
+<!ENTITY display "Vis indstillinger">
+<!ENTITY show_bm "Menuen bogmærker">
+<!ENTITY showbm_tooltip "Vis på menuen bogmærker">
+<!ENTITY show_tools "Funktionsmenu">
+<!ENTITY showtools_tooltip "Vis i menuen funktioner">
+<!ENTITY show_org "Arranger bogmærker">
+<!ENTITY showorg_tooltip "Vis i Arranger bogmærker">
+<!ENTITY show_manage "Arranger bogmærker">
+<!ENTITY showmanage_tooltip "Vis i menuen funktioner under Arranger bogmærker">
+<!ENTITY check_button "Kontroller bogmærker">
+<!ENTITY check_links "Kontroller sider findes">
+<!ENTITY checklinks_tooltip "Kontroller at hver bogmærket side eksistere. NOTE: Kan tage en del tid at gennemføre">
+<!ENTITY find_icons "Indlæs favikoner">
+<!ENTITY findicons_tooltip "Se efter og indlæs manglende favikoner">
+<!ENTITY reload_icons "Genindlæs favikoner">
+<!ENTITY reloadicons_tooltip "Overskriv alle eksisterende favikoner">
+<!ENTITY use_get "Kontroller med GET">
+<!ENTITY useget_tooltip "Benyt GET i stedet for HEAD til linktest">
+<!ENTITY use_timeout "Tidsudløb">
+<!ENTITY usetimeout_tooltip "Annuller kontrollen efter at der er gået en bestemt tid">
+<!ENTITY timeout_tooltip "Tid i sekunder før kontrollen annulleres">
+<!ENTITY use_concurrency "Samtidighed">
+<!ENTITY useconcurrency_tooltip "Begræns hvor mange bogmærker der kontrolleres samtidig">
+<!ENTITY concurrency_tooltip "Antal bogmærker kontrolleret samtidig">
+<!ENTITY check_duplicates "Kontroller for identiske">
+<!ENTITY checkduplicates_tooltip "Kontroller for identiske bogmærker">
+<!ENTITY delete_dup_dates "Slet identiske datoer">
+<!ENTITY dupdates_tooltip "Se dokumentationen for detaljer">
+<!ENTITY check_empty "Kontroller for tomme mapper">
+<!ENTITY checkempty_tooltip "Kontroller for mapper som er fuldstændig tomme">
+<!ENTITY what_to_check "Hvad skal kontrolleres">
+<!ENTITY folder_title "Vælg mappe">
+<!ENTITY progress_title "Kontrollere sider">
+<!ENTITY results_title "CheckPlaces resultater">
+<!ENTITY checked "Kontrolleret">
+<!ENTITY elapsed "Forløbet tid:">
+<!ENTITY mins "minutter">
+<!ENTITY bookmarks "Bogmærker:">
+<!ENTITY livemarks "Live-mærker:">
+<!ENTITY pages "Sider:">
+<!ENTITY folders "Mapper:">
+<!ENTITY excludedCount "Undlad:">
+<!ENTITY found "Fundet">
+<!ENTITY bad "Deforme URI'er">
+<!ENTITY failed_label "Afvist">
+<!ENTITY failed "Afvist">
+<!ENTITY inDoubt "Tvivlsomme">
+<!ENTITY duplicates "Dubletter">
+<!ENTITY empty "Tomme mapper">
+<!ENTITY cancelled "Annulleret">
+<!ENTITY excluded "Undladte punkter">
+<!ENTITY deleted "Slettet">
+<!ENTITY open "Åben">
+<!ENTITY open_tooltip "Åben det valgte bogmærke i faneblad">
+<!ENTITY delete "Slet">
+<!ENTITY delete_tooltip "Slet det valgte bogmærke">
+<!ENTITY deletefolders_tooltip "Slet den valgte mappe">
+<!ENTITY deleteall "Slet alt">
+<!ENTITY deleteall_tooltip "Slet alle bogmærker i listen">
+<!ENTITY deleteallfolders_tooltip "Slet alle mapper i listen">
+<!ENTITY delete_dups "Slet alle dubletter">
+<!ENTITY deletedups_tooltip "Slet alle dubletter og lad et bogmærke være tilbage">
+<!ENTITY keepfirst "Slet alt andet end første">
+<!ENTITY keepfirst_tooltip "Slet alle identiske på nær den originale">
+<!ENTITY keeplast "Slet alt andet end sidste">
+<!ENTITY keeplast_tooltip "Slet alle dubletter på nær sidst tilføjet">
+<!ENTITY exclude "Undlad">
+<!ENTITY exclude_tooltip "Undlad det valgte bogmærke fra kontrol næste gang">
+<!ENTITY excludeall "Undlad alle">
+<!ENTITY excludeall_tooltip "Undlad alle bogmærker i listen fra kontrol næste gang">
+<!ENTITY include "Medtag">
+<!ENTITY include_tooltip "Medtag det valgte bogmærke igen">
+<!ENTITY includeall "Medtag alle">
+<!ENTITY includeall_tooltip "Medtag alle bogmærker i listen igen">
+<!ENTITY restore "Gendan">
+<!ENTITY restore_tooltip "Gendan det valgte bogmærke">
+<!ENTITY restoreall "Gendan alt">
+<!ENTITY restoreall_tooltip "Gendan alle bogmærker på listen">
+<!ENTITY fix "Fix 301">
+<!ENTITY fix_tooltip "Opdater bogmærkerne med omdirigerings-URL">
+<!ENTITY fixall "Fix alle 301'er">
+<!ENTITY fixall_tooltip "Benyt omdirigerings-URL for alle 301'er">
+<!ENTITY dns "DNS fejl">
+<!ENTITY s400 "Sidefejl">
+<!ENTITY s500 "Serverfejl">
+<!ENTITY noFile "Manglende filer">
+<!ENTITY others "Anden fejl">
+<!ENTITY details "Detaljer">
+<!ENTITY status "Status/Antal">
+<!ENTITY path "Sti">
+<!ENTITY name "Navn">
+<!ENTITY location "Placering">
+<!ENTITY no_problems "Ingen problemer fundet">
+<!ENTITY dialog_title "Alarm">
+<!ENTITY report_error "Rapporter problem">
+<!ENTITY save "Gem">
+<!ENTITY check "Kontroller">
+<!ENTITY check_db "Kontroller Check Places database">
+<!ENTITY checkdb_tooltip "Kontroller integriteten af Check Places database">
+<!ENTITY quick_db "Hurtig kontrol">
+<!ENTITY thorough_db "Grundig kontrol">
+<!ENTITY compact_db "Komprimer database">
+<!ENTITY compact_tooltip "Komprimer/skrump database">
+<!ENTITY id "ID">
+<!ENTITY date_added "Dato tilføjet">
+<!ENTITY last_modified "Sidst ændret">
+<!ENTITY keyword "Nøgleord">
+<!ENTITY tags "Mærker">
+<!ENTITY description "Beskrivelse">
+<!ENTITY database "Database">
+<!ENTITY compacted "Komprimeret">
+<!ENTITY check_failed "Kontrol mislykkedes">
+<!ENTITY compact_failed "Komprimering mislykkedes">

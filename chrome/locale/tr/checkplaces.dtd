@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Yerimlerinin geçerliliğini inceleyin">
+<!ENTITY options "Ayarlar">
+<!ENTITY include_folders "Dahil edilecekleri seçin">
+<!ENTITY selection_default "Varsayılanda,herşey dahil edilir">
+<!ENTITY select_folders "Dizini seç">
+<!ENTITY includefolders_tooltip "İçe aktarılıp incelenecek dizini seç">
+<!ENTITY exclude_folders "Hariç tutulacakları seçin">
+<!ENTITY excludefolders_tooltip "İncelemeden hariç tutulacak dizini seç">
+<!ENTITY show_excludes "Hariç tutulanları göster">
+<!ENTITY display "Görünüm">
+<!ENTITY show_bm "Yerimleri menüsü">
+<!ENTITY showbm_tooltip "Yerimlerinde göster">
+<!ENTITY show_tools "Araçlar menüsü">
+<!ENTITY showtools_tooltip "Araçlar menüsünde göster">
+<!ENTITY show_org "Yerimi düzenleyici menüsü">
+<!ENTITY showorg_tooltip "Yerimi düzenleyici menüsünde göster">
+<!ENTITY show_manage "Yerimlerini Yönet">
+<!ENTITY showmanage_tooltip "Yerimlerini Yöneti Araçlar da göster">
+<!ENTITY check_button "Yerimlerini incele">
+<!ENTITY check_links "Canlı sayfaları bul">
+<!ENTITY checklinks_tooltip "Bütün sayfaları inceler. NOT: Tamamlanması biraz zaman alabilir">
+<!ENTITY find_icons "Simgeleri göster">
+<!ENTITY findicons_tooltip "Simgeleri inceler eksikleri tamamlar">
+<!ENTITY reload_icons "Favikonları yenile">
+<!ENTITY reloadicons_tooltip "Olan favikonları yeniden yaz">
+<!ENTITY use_get "GET yöntemini kullan">
+<!ENTITY useget_tooltip "GET yöntemi ile HEADle birlikte siteleri inceler">
+<!ENTITY use_timeout "Zaman aşımı">
+<!ENTITY usetimeout_tooltip "Belirtilen zamandan sonra incelemeyi iptal et">
+<!ENTITY timeout_tooltip "Belirtilen zamandan önce iptal edildi">
+<!ENTITY use_concurrency "Eş zamanlı">
+<!ENTITY useconcurrency_tooltip "Aynı anda kaçının kontrol edileceğini belirle">
+<!ENTITY concurrency_tooltip "Aynı anda kontrol edilenler">
+<!ENTITY check_duplicates "Aynı siteleri incele">
+<!ENTITY checkduplicates_tooltip "Aynı adresi kullananları incele">
+<!ENTITY delete_dup_dates "Aynı tarihde aynı adres olanları sil">
+<!ENTITY dupdates_tooltip "Ayrıntılar için dökümanlara bakın">
+<!ENTITY check_empty "Boş dizinleri incele">
+<!ENTITY checkempty_tooltip "Boş klasörleri inceler">
+<!ENTITY what_to_check "Kontroller">
+<!ENTITY folder_title "Dizin seç">
+<!ENTITY progress_title "İnceleniyor">
+<!ENTITY results_title "CheckPlaces Sonuçları">
+<!ENTITY checked "İncelendi">
+<!ENTITY elapsed "Geçen zaman:">
+<!ENTITY mins "dakika">
+<!ENTITY bookmarks "Yerimleri:">
+<!ENTITY livemarks "Canlı yerimleri:">
+<!ENTITY pages "Sayfalar:">
+<!ENTITY folders "Dizinler:">
+<!ENTITY excludedCount "Hariçler:">
+<!ENTITY found "Bulundu">
+<!ENTITY bad "Hatalı sayfalar">
+<!ENTITY failed_label "Başarısız">
+<!ENTITY failed "Hata veren sayfalar">
+<!ENTITY inDoubt "Sorunlu sayfalar">
+<!ENTITY duplicates "Birden fazla">
+<!ENTITY empty "Boş dizinler">
+<!ENTITY cancelled "İptal edilenler">
+<!ENTITY excluded "Hariç olanlar">
+<!ENTITY deleted "Silindi">
+<!ENTITY open "Aç">
+<!ENTITY open_tooltip "Seçilen yerimlerini sekmelerde aç">
+<!ENTITY delete "Sil">
+<!ENTITY delete_tooltip "Seçilen yerimlerini sil">
+<!ENTITY deletefolders_tooltip "Seçilen dizini sil">
+<!ENTITY deleteall "Tümünü sil">
+<!ENTITY deleteall_tooltip "Listedeki tüm yerimlerini sil">
+<!ENTITY deleteallfolders_tooltip "Listedeki tüm dizinleri sil">
+<!ENTITY delete_dups "Aynı olanların tümünü sil">
+<!ENTITY deletedups_tooltip "Bütün aynı sık kullanılanları siler">
+<!ENTITY keepfirst "Aslı hariç tümünü sil">
+<!ENTITY keepfirst_tooltip "Aslı hariç tümünü siler">
+<!ENTITY keeplast "Son eklenen hariç tümünü sil">
+<!ENTITY keeplast_tooltip "Son eklenen hariç tümünü siler">
+<!ENTITY exclude "Hariç">
+<!ENTITY exclude_tooltip "Seçilen yerimlerini bir dahaki sefer kontrol etme">
+<!ENTITY excludeall "Tümü hariç">
+<!ENTITY excludeall_tooltip "Seçilen yerimlerini bir dahaki sefer kontrol etme">
+<!ENTITY include "Dahil">
+<!ENTITY include_tooltip "Seçilen yerimlerini tekrar dahil et">
+<!ENTITY includeall "Tümü dahil">
+<!ENTITY includeall_tooltip "Listedeki tüm yerimleri tekrar dahil et">
+<!ENTITY restore "Geri yükle">
+<!ENTITY restore_tooltip "Seçileni geri yükler">
+<!ENTITY restoreall "Hepsini geri yükle">
+<!ENTITY restoreall_tooltip "Tüm sık kullanılanları geri yükle">
+<!ENTITY fix "301 olanı düzelt">
+<!ENTITY fix_tooltip "Sıkkulananı yönlendirme urlsi ile değiştir">
+<!ENTITY fixall "Tüm 301'leri düzelt">
+<!ENTITY fixall_tooltip "301 için bu yönlendirme urlsini kullan">
+<!ENTITY dns "DNS hataları">
+<!ENTITY s400 "Sayfa hataları">
+<!ENTITY s500 "Sunucu hataları">
+<!ENTITY noFile "Kayıp dosyalar">
+<!ENTITY others "Diğer hatalar">
+<!ENTITY details "Ayrıntılar">
+<!ENTITY status "Durum/Sayım">
+<!ENTITY path "Yer">
+<!ENTITY name "İsim">
+<!ENTITY location "Yer">
+<!ENTITY no_problems "Sorun bulunamadı">
+<!ENTITY dialog_title "Uyarı">
+<!ENTITY report_error "Hata bildir">
+<!ENTITY save "Kaydet">
+<!ENTITY check "Kontrol et">
+<!ENTITY check_db "Yerlerin veritabanını denetle">
+<!ENTITY checkdb_tooltip "Veritabanı bütünlüğünü denetler">
+<!ENTITY quick_db "Hızlı incele">
+<!ENTITY thorough_db "Derin incele">
+<!ENTITY compact_db "Veritabanı sıkıştır">
+<!ENTITY compact_tooltip "Veritabanını şıkıştırır/temizler">
+<!ENTITY id "ID">
+<!ENTITY date_added "Eklenme tarihi">
+<!ENTITY last_modified "Son değiştirme">
+<!ENTITY keyword "Anahtar kelime">
+<!ENTITY tags "Başlıklar">
+<!ENTITY description "Açıklama">
+<!ENTITY database "Veritabanı:">
+<!ENTITY compacted "Sıkıştırıldı">
+<!ENTITY check_failed "Kontrol başarısız">
+<!ENTITY compact_failed "Sıkıştırma başarısız">

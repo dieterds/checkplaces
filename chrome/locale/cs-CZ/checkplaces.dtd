@@ -1,0 +1,123 @@
+<!ENTITY title "CheckPlaces">
+<!ENTITY tooltip "Kontroluje platnost záložek">
+<!ENTITY options "Možnosti kontroly">
+<!ENTITY include_folders "Zvolte složky ke kontrole">
+<!ENTITY selection_default "Ve výchozím nastavení bude zahrnuto vše">
+<!ENTITY select_folders "Zvolit složky">
+<!ENTITY includefolders_tooltip "Zvolí složky, které chcete zkontrolovat">
+<!ENTITY exclude_folders "Zvolte složky k vyloučení">
+<!ENTITY excludefolders_tooltip "Zvolí složky, které chcete z kontroly vyjmout">
+<!ENTITY show_excludes "Zobrazit vyloučené položky">
+<!ENTITY display "Možnosti zobrazení">
+<!ENTITY show_bm "Nabídka záložek">
+<!ENTITY showbm_tooltip "Zobrazí položku v Nabídce záložek">
+<!ENTITY show_tools "Nabídka nástrojů">
+<!ENTITY showtools_tooltip "Zobrazí položku v Nabídce nástrojů">
+<!ENTITY show_org "Knihovna stránek">
+<!ENTITY showorg_tooltip "Zobrazí položku v Knihovně stránek">
+<!ENTITY show_manage "Spravovat záložky">
+<!ENTITY showmanage_tooltip "Zobrazit v nabídce Spravovat záložky">
+<!ENTITY check_button "Zkontroluje záložky">
+<!ENTITY check_links "Ověřit, zda stránky existují">
+<!ENTITY checklinks_tooltip "Ověří všechny uložené stránky, zda stále existují. POZNÁMKA: Ověření může trvat delší dobu">
+<!ENTITY find_icons "Načíst favikony">
+<!ENTITY findicons_tooltip "Vyhledá a načte chybějící favikony">
+<!ENTITY reload_icons "Znovu načít favikony">
+<!ENTITY reloadicons_tooltip "Přepsat všechny existující favikony">
+<!ENTITY use_get "Zkontrolovat prostřednictvím GET">
+<!ENTITY useget_tooltip "Při testování odkazů použije GET namísto HEAD">
+<!ENTITY use_timeout "Časový limit">
+<!ENTITY usetimeout_tooltip "Zruší kontrolu po uplynutí určeného časového limitu">
+<!ENTITY timeout_tooltip "Zadejte čas v sekundách">
+<!ENTITY use_concurrency "Souběžně ověřovat">
+<!ENTITY useconcurrency_tooltip "Omezuje počet souběžně ověřovaných záložek">
+<!ENTITY concurrency_tooltip "Počet souběžně ověřovaných záložek">
+<!ENTITY check_duplicates "Najít duplicitní záložky">
+<!ENTITY checkduplicates_tooltip "Vyhledá duplicitní záložky">
+<!ENTITY delete_dup_dates "Odstranit duplicitní data">
+<!ENTITY dupdates_tooltip "Podrobnosti najdete v dokumentaci">
+<!ENTITY check_empty "Najít prázdné složky">
+<!ENTITY checkempty_tooltip "Vyhledá složky, které jsou zcela prázdné">
+<!ENTITY what_to_check "Položky ke kontrole">
+<!ENTITY folder_title "Zvolit složky">
+<!ENTITY progress_title "Probíhá kontrola stránek">
+<!ENTITY results_title "CheckPlaces - Výsledky kontroly">
+<!ENTITY checked "Zkontrolováno">
+<!ENTITY elapsed "Celkový čas:">
+<!ENTITY mins "minut">
+<!ENTITY bookmarks "Záložek:">
+<!ENTITY livemarks "RSS kanálů:">
+<!ENTITY pages "Stránek:">
+<!ENTITY folders "Složek:">
+<!ENTITY excludedCount "Z kontroly vyjmuto:">
+<!ENTITY found "Výsledky kontroly">
+<!ENTITY bad "Špatné adresy">
+<!ENTITY failed_label "Chyby">
+<!ENTITY failed "Chyby">
+<!ENTITY inDoubt "Sporné">
+<!ENTITY duplicates "Duplicitní položky">
+<!ENTITY empty "Prázdné složky">
+<!ENTITY cancelled "Zrušeno">
+<!ENTITY excluded "Z kontroly vyjmuto">
+<!ENTITY deleted "Odstraněno">
+<!ENTITY open "Otevřít">
+<!ENTITY open_tooltip "Otevře vybrané záložky v nových panelech">
+<!ENTITY delete "Odstranit">
+<!ENTITY delete_tooltip "Odstraní vybrané záložky">
+<!ENTITY deletefolders_tooltip "Odstraní vybrané složky">
+<!ENTITY deleteall "Odstranit vše">
+<!ENTITY deleteall_tooltip "Odstraní všechny záložky na seznamu">
+<!ENTITY deleteallfolders_tooltip "Odstraní všechny složky na seznamu">
+<!ENTITY delete_dups "Odstranit všechny duplicitní položky">
+<!ENTITY deletedups_tooltip "Odstraní všechny duplicitní položky, ve výsledku zbude pouze jediná položka">
+<!ENTITY keepfirst "Odstranit všechny kromě první">
+<!ENTITY keepfirst_tooltip "Odstraní všechny duplicitní položky s výjimkou té původní">
+<!ENTITY keeplast "Odstranit všechny kromě poslední">
+<!ENTITY keeplast_tooltip "Odstraní všechny duplicitní položky s výjimkou poslední přidané">
+<!ENTITY exclude "Vyjmout">
+<!ENTITY exclude_tooltip "Vyjme vybrané záložky z příští kontroly">
+<!ENTITY excludeall "Vyjmout vše">
+<!ENTITY excludeall_tooltip "Vyjme všechny záložky na seznamu z příští kontroly">
+<!ENTITY include "Zahrnout">
+<!ENTITY include_tooltip "Znovu zahrne vybrané záložky do kontroly">
+<!ENTITY includeall "Zahrnout vše">
+<!ENTITY includeall_tooltip "Znovu zahrne všechny záložky na seznamu do kontroly">
+<!ENTITY restore "Obnovit">
+<!ENTITY restore_tooltip "Obnoví vybrané záložky">
+<!ENTITY restoreall "Obnovit vše">
+<!ENTITY restoreall_tooltip "Obnoví všechny záložky na seznamu">
+<!ENTITY fix "Opravit chybu 301">
+<!ENTITY fix_tooltip "Aktualizovat záložku přesměrovanou adresou">
+<!ENTITY fixall "Opravit všechny chyby 301">
+<!ENTITY fixall_tooltip "Použít přesměrování při každém zjištění chyby 301">
+<!ENTITY dns "Chyby DNS serveru">
+<!ENTITY s400 "Chyby na stránce">
+<!ENTITY s500 "Chyby serveru">
+<!ENTITY noFile "Chybějící soubory">
+<!ENTITY others "Ostatní chyby">
+<!ENTITY details "Detaily kontroly">
+<!ENTITY status "Stav">
+<!ENTITY path "Cesta">
+<!ENTITY name "Název">
+<!ENTITY location "Umístění">
+<!ENTITY no_problems "Nebyly zjištěny žádné problémy">
+<!ENTITY dialog_title "Upozornění">
+<!ENTITY report_error "Nahlásit problém">
+<!ENTITY save "Uložit">
+<!ENTITY check "Zkontrolovat">
+<!ENTITY check_db "Ověřit databázi">
+<!ENTITY checkdb_tooltip "Ověří celistvost databáze">
+<!ENTITY quick_db "Rychlá kontrola">
+<!ENTITY thorough_db "Důkladná kontrola">
+<!ENTITY compact_db "Zmenšit databázi">
+<!ENTITY compact_tooltip "Zmenší velikost databáze odstraněním prázdných míst mezi záznamy">
+<!ENTITY id "ID">
+<!ENTITY date_added "Datum přidání">
+<!ENTITY last_modified "Naposledy upraveno">
+<!ENTITY keyword "Klíčové slovo">
+<!ENTITY tags "Štítky">
+<!ENTITY description "Popis">
+<!ENTITY database "Stav databáze:">
+<!ENTITY compacted "Zmenšena">
+<!ENTITY check_failed "Kontrola selhala">
+<!ENTITY compact_failed "Zmenšení selhalo">

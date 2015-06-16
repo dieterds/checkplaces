@@ -24,5 +24,6 @@
   "license": "MPL 2.0",
   "icon": "data/icon.png",
   "dependencies": ["menuitems", "addon-sdk"],
-  "version": "2.7.0"
+  "version": "2.7.0",
+  "updateURL": "https://github.com/dieterds/checkplaces/raw/master/checkplaces.update.rdf"
 }

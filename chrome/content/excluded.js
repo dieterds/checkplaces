@@ -46,7 +46,7 @@ var CheckPlacesExcluded = {
 
 			var displayList = document.getElementById('excludedList');
 			for (var i = 0; i < items.length; i++) {
-				var uri = null //null for folder, feedURI.spec
+				var uri = null; //null for folder, feedURI.spec
 				var type = null;
 				try {
 					type = PlacesUtils.bookmarks.getItemType(items[i]);
@@ -107,4 +107,4 @@ var CheckPlacesExcluded = {
 		this.stopDisplay = false;
 		this.displayDetails();
 	}
-}
+};

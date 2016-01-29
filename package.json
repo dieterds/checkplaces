@@ -1,9 +1,11 @@
 {
-  "name": "checkplaces",
-  "title": "CheckPlaces",
-  "id": "checkplaces@andyhalford.com",
-  "description": "CheckPlaces.",
+  "name": "checkplaces2",
+  "title": "CheckPlaces2",
+  "id": "checkplaces2@andyhalford.com",
+  "description": "CheckPlaces2.",
+  "main": "lib/main.js",
   "author": "Andy Halford",
+  "homepage": "http://github.com/dieterds/checkplaces/",
   "contributors": ["dieterds"],
   "translators": [
   "Jojaba (fr)"
@@ -22,8 +24,15 @@
   ,"Mikael Hiort af Ornaes (sv-SE)"
 ],
   "license": "MPL 2.0",
-  "icon": "data/icon.png",
-  "dependencies": ["menuitems", "addon-sdk"],
+  "icon": {
+    "32": "icon.png"
+  },
+  "dependencies": {
+    "menuitem": "0.0.4"
+  },
   "version": "2.7.0",
+  "engines": {
+    "Firefox": ">=36.0"
+  },
   "updateURL": "https://github.com/dieterds/checkplaces/raw/master/checkplaces.update.rdf"
 }

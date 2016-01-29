@@ -165,7 +165,7 @@ CheckPlacesNetworking.prototype = {
 
     throw this.Cr.NS_NOINTERFACE;
   }
-}
+};
 
 //iid reference:
 //nsILoadContext 314d8a54-1caf-4721-94d7-f6c82d9b82ed

@@ -86,7 +86,7 @@ var CheckPlacesProgress = {
 	dbCompactFailed: false,
 
 	onDialogLoad: function() {
-		setTimeout(this.checkBookmarks, 500);
+		setTimeout(this.checkBookmarks(), 500);
 	},
 
 	onDialogCancel: function() {
@@ -232,13 +232,13 @@ var CheckPlacesProgress = {
 							}
 						}
 					}
-					if (recurseTree(child, checkContainer) == false) isEmpty = false;
+					if (recurseTree(child, checkContainer) === false) isEmpty = false;
 				}
 			}
 
 			//Treat folders that just have seps in as empty as well as truly empty ones
 			if (checkContents && checkEmpty) {
-				if ((container.childCount == 0 || isEmpty) &&
+				if ((container.childCount === 0 || isEmpty) &&
 						PlacesUtils.bookmarks.getFolderIdForItem(container.itemId) != PlacesUtils.placesRootId)
 				{
 					cpp.emptyFolderList.push(container.itemId);
@@ -476,25 +476,25 @@ var CheckPlacesProgress = {
 
 		//Firefox 3.0
 		var stmt;
-		if (version.substring(0,3) == "3.0") {
-			var places = Components.classes["@mozilla.org/file/directory_service;1"]
-														 .getService(Components.interfaces.nsIProperties)
-														 .get("ProfD", Components.interfaces.nsIFile);
-			places.append("places.sqlite");
-			var statement = Components.classes["@mozilla.org/storage/service;1"]
-																.getService(Components.interfaces.mozIStorageService)
-																.openDatabase(places)
-																.createStatement(sql);
-			stmt = Components.classes["@mozilla.org/storage/statement-wrapper;1"]
-											 .createInstance(Components.interfaces.mozIStorageStatementWrapper);
-			stmt.initialize(statement);
-		}
+//		if (version.substring(0,3) == "3.0") {
+//			var places = Components.classes["@mozilla.org/file/directory_service;1"]
+//														 .getService(Components.interfaces.nsIProperties)
+//														 .get("ProfD", Components.interfaces.nsIFile);
+//			places.append("places.sqlite");
+//			var statement = Components.classes["@mozilla.org/storage/service;1"]
+//																.getService(Components.interfaces.mozIStorageService)
+//																.openDatabase(places)
+//																.createStatement(sql);
+//			stmt = Components.classes["@mozilla.org/storage/statement-wrapper;1"]
+//											 .createInstance(Components.interfaces.mozIStorageStatementWrapper);
+//			stmt.initialize(statement);
+//		}
 		//Firefox 3.5+
-		else {
+//		else {
 			stmt = Components.classes["@mozilla.org/browser/nav-history-service;1"]
 													 .getService(Components.interfaces.nsPIPlacesDatabase)
 													 .DBConnection.createStatement(sql);
-		}
+//		}
 
 		return stmt;
 	},
@@ -957,7 +957,7 @@ var CheckPlacesProgress = {
 			case 0x804B0002:
 				message = this.bundle.GetStringFromName('NS_BINDING_ABORTED');
 				return;		//If cancelled by user/timer then don't report it
-				break;
+				//break;
 			case 0x804B000A:
 				message = this.bundle.GetStringFromName('NS_ERROR_MALFORMED_URI');
 				break;

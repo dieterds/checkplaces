@@ -1,2 +1,0 @@
-call d:\_Scripting\_Firefox\addon-sdk-1.17\bin\activate.bat
-cfx xpi --update-link=https://raw.github.com/dieterds/checkplaces/master/checkplaces.xpi --update-url=https://raw.github.com/dieterds/checkplaces/master/checkplaces.update.rdf

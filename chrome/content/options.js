@@ -80,7 +80,7 @@ var CheckPlaces = {
 
 			//Use nav-bar instead for older browsers
 			else {
-				var bar = document.getElementById("nav-bar");
+				bar = document.getElementById("nav-bar");
 				var curSet = bar.currentSet.split(",");
 
 				if (curSet.indexOf(myId) == -1) {

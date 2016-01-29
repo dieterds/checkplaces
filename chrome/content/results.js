@@ -110,7 +110,7 @@ var CheckPlacesResults = {
 		}
 
 		//START HERE
-		if (window.arguments != null) {
+		if (window.arguments !== null) {
 			this.deletedList = [];
 
 			var dbChecked = window.arguments[0].inn.dbChecked;
@@ -549,7 +549,7 @@ var CheckPlacesResults = {
 
 			//Select first item in sublist
 			this.stopDisplay = false;
-			this.displayDuplicatesSubList()
+			this.displayDuplicatesSubList();
 		}
 		//Select the first one (which should cause this method to be called)
 		else if (displayList.itemCount > 0) {
@@ -1030,7 +1030,7 @@ var CheckPlacesResults = {
 			list[index].dups.splice(subIndex, 1);
 
 			//If no more sublist items then remove the main item
-			if (list[index].dups.length == 0) {
+			if (list[index].dups.length === 0) {
 				displayList.removeItemAt(index);
 				list.splice(index, 1);
 				this.stopDisplay = false;
@@ -1245,7 +1245,7 @@ var CheckPlacesResults = {
 						}
 					}
 				}
-			}
+			};
 			PlacesUtils.bookmarks.runInBatchMode(batch, null);
 	},
 
@@ -1366,4 +1366,4 @@ var CheckPlacesResults = {
 
 		this.displayDetails(listName);
 	}
-}
+};
